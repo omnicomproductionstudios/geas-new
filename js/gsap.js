@@ -78,7 +78,7 @@ gsap.from([".mobile h2, .features-list, .store"], {
   duration: 1,
   autoAlpha: 0,
   y: 120,
-  stagger: 0.1,
+  stagger: 0.05,
   ease: "power1.inOut",
   scrollTrigger: {
     trigger: ".mobile",
@@ -87,3 +87,42 @@ gsap.from([".mobile h2, .features-list, .store"], {
     // markers: true,
   },
 });
+
+const path = document.querySelector(".ServicesBlock_ArrowLine__TrPyL");
+const circle = document.querySelector(".ServicesBlock_ArrowCircle__Uf9nZ");
+
+if (path && circle) {
+  const length = path.getTotalLength();
+
+  // prepare stroke
+  path.style.strokeDasharray = length;
+  path.style.strokeDashoffset = length;
+  circle.style.opacity = 0;
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".serviceArrow", // parent svg
+        start: "top 80%", // adjust as needed
+        end: "bottom 40%",
+        toggleActions: "play none none reverse",
+        // markers: true, // debug
+      },
+    })
+    .to(path, {
+      strokeDashoffset: 0,
+      duration: 2,
+      ease: "power2.out",
+    })
+    .to(
+      circle,
+      {
+        opacity: 1,
+        scale: 1.2,
+        transformOrigin: "center",
+        duration: 0.4,
+        ease: "back.out(2)",
+      },
+      "-=0.3"
+    );
+}

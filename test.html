@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SVG Draw Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #111;
+      }
+      .serviceArrow {
+        width: 80%;
+        max-width: 750px;
+      }
+      .ServicesBlock_ArrowLine__TrPyL {
+        stroke-linecap: round;
+      }
+      .ServicesBlock_ArrowCircle__Uf9nZ {
+        opacity: 0; /* start hidden */
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      class="serviceArrow"
+      viewBox="0 0 753 337"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_977_3393)">
+        <path
+          class="ServicesBlock_ArrowLine__TrPyL"
+          d="M751 0V30.8808C751 66.227 722.346 94.8808 687 94.8808H69.914C34.5678 94.8808 5.91406 123.535 5.91406 158.881V330"
+          stroke="url(#paint0_linear_977_3393)"
+          stroke-width="3"
+        ></path>
+        <circle
+          class="ServicesBlock_ArrowCircle__Uf9nZ"
+          cx="6"
+          cy="331"
+          r="6"
+          fill="#FFE2D2"
+        ></circle>
+      </g>
+      <defs>
+        <linearGradient
+          id="paint0_linear_977_3393"
+          x1="811.542"
+          y1="303.072"
+          x2="629.037"
+          y2="-254.425"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FFE2D2"></stop>
+          <stop offset="0.5" stop-color="#FFC9D6"></stop>
+          <stop offset="1" stop-color="#F98DC6"></stop>
+        </linearGradient>
+        <clipPath id="clip0_977_3393">
+          <rect width="753" height="337" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+
+    <script>
+      const path = document.querySelector(".ServicesBlock_ArrowLine__TrPyL");
+      const circle = document.querySelector(
+        ".ServicesBlock_ArrowCircle__Uf9nZ"
+      );
+      const length = path.getTotalLength();
+
+      // Prepare stroke dash
+      path.style.strokeDasharray = length;
+      path.style.strokeDashoffset = length;
+
+      // Timeline animation
+      const tl = gsap.timeline();
+      tl.to(path, {
+        strokeDashoffset: 0,
+        duration: 2,
+        ease: "power2.out",
+      }).to(
+        circle,
+        {
+          opacity: 1,
+          scale: 1.2,
+          transformOrigin: "center",
+          duration: 0.4,
+          ease: "back.out(2)",
+        },
+        "-=0.3"
+      ); // start a bit before line ends
+    </script>
+  </body>
+</html>
