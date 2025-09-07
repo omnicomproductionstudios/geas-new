@@ -64,7 +64,7 @@ var swiper = new Swiper(".slider2", {
   fadeEffect: { crossFade: true },
   speed: 300,
   autoplay: {
-    delay: 4000, // 4s per slide
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -94,17 +94,42 @@ var swiper = new Swiper(".slider2", {
 
 // Animate progress bar with autoplay
 swiper.on("autoplayTimeLeft", function (s, time, progress) {
-  // Reset all progress bars
   document
     .querySelectorAll(".custom-pagination .progress-bar span")
     .forEach((el) => (el.style.width = "0%"));
 
-  // Animate the active one
   const active = document.querySelector(
     ".custom-pagination .swiper-pagination-bullet-active .progress-bar span"
   );
   if (active) {
-    // progress goes 1 → 0, so invert it
     active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
   }
 });
+
+let tl1, tl2, tl3;
+
+swiper.on("slideChange", function () {
+  if (swiper.activeIndex === 0) {
+    if (tl1) tl1.restart();
+    else tl1 = playSlide1Animation();
+  }
+  if (swiper.activeIndex === 1) {
+    if (tl2) tl2.restart();
+    else tl2 = playSlide2Animation();
+  }
+  if (swiper.activeIndex === 2) {
+    if (tl3) tl3.restart();
+    else tl3 = playSlide3Animation();
+  }
+});
+
+// Run immediately when Swiper is ready
+swiper.on("init", function () {
+  // Force the animation for the first visible slide
+  if (swiper.activeIndex === 0) tl1 = playSlide1Animation();
+  if (swiper.activeIndex === 1) tl2 = playSlide2Animation();
+  if (swiper.activeIndex === 2) tl3 = playSlide3Animation();
+});
+
+// If you are using Swiper with modules, you must explicitly init
+swiper.init();

@@ -954,9 +954,17 @@ body{
     font-size: 1.4rem;
 }
 .heroSwiper .swiper-slide img{
-    max-width: 40rem;
-    max-height: 20rem;
+    height: 150px;
     margin-bottom: 5em;
+}
+.heroSwiper .swiper-slide .img1{
+    height: 17.5rem;
+}
+.heroSwiper .swiper-slide .img2{
+    height: 20rem;
+}
+.heroSwiper .swiper-slide .img3{
+    height: 21.5rem;
 }
 .heroSwiper .swiper-slide .svgIcon{
     width: 5rem;
@@ -1089,8 +1097,8 @@ body{
 
 /* Product */
 .product{
-    padding-top: 20rem;
-    padding-bottom: 18rem;
+    padding-top: 17rem;
+    padding-bottom: 15rem;
     background:  url('/images/desktopRLBG.svg') no-repeat right bottom / contain;
 }
 .product .left{
@@ -1110,19 +1118,40 @@ body{
     color: var(--color5);
     margin-bottom: 3rem;
 }
-.slider2{
-    background-color: #fbf6f6;
-    height: 100%;
-    border-radius: 1.5rem;
-    box-shadow: 0 38.46px 30.768px -23.076px rgba(95, 92, 121, .22);
+.slider2 .swiper-wrapper{
+    padding-bottom: 4rem;
 }
-.slider2 .swiper-slide{
+.slider2 .copy{
     padding: 2.5rem;
+    padding-bottom: 0px;
+}
+.slider2 .copy p{
+    height: 8rem;
+    overflow: hidden;
 }
 .slider2 .number{
     color: var(--color2);
     font-weight: 700;
     font-size: 1.3rem;
+}
+.slider2 .swiper-slide{
+    background-color: #fbf6f6;
+    border-radius: 1.5rem;
+    box-shadow: 0 40px 32px -24px rgba(95,92,121,.22);
+}
+.slider2 .svgIcon{
+    height: 30rem;
+    background: url(/images/svg/Slider_Image_BG_desktop.svg) no-repeat;
+    /* background-size: cover; */
+    background-position: center -25px;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+    padding: 3rem 1rem;
+}
+.slider2 .svgIcon svg{
+    width: 100%;
+    height:100%;
 }
 .slider2 h3{
     font-size: 2.5rem;
@@ -1133,13 +1162,13 @@ body{
     color: var(--color5);
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
 }
 
 
 /* account */
 .account{
-    padding-top: 18rem;
+    padding-top: 15rem;
 }
 
 .account .title p{
@@ -1468,3 +1497,4 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+

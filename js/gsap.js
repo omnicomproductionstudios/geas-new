@@ -126,3 +126,184 @@ if (path && circle) {
       "-=0.3"
     );
 }
+
+// Slide 1 animation
+function playSlide1Animation() {
+  const tl = gsap.timeline();
+
+  // Circle paths
+  const icoCircle = document.querySelectorAll(".circle path");
+  icoCircle.forEach((el) => {
+    const length = el.getTotalLength();
+    gsap.set(el, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+      autoAlpha: 0,
+    });
+  });
+  tl.to(
+    icoCircle,
+    {
+      autoAlpha: 1,
+      strokeDashoffset: 0,
+      ease: "power1.inOut",
+      stagger: 0.1,
+    },
+    "0"
+  );
+
+  // Line paths
+  const icoPath = document.querySelectorAll(".line1 path, .line2 path");
+  icoPath.forEach((el) => {
+    const length = el.getTotalLength();
+    gsap.set(el, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+      autoAlpha: 0,
+    });
+  });
+  gsap.set(".line1-dot", { autoAlpha: 0 });
+  tl.to(
+    icoPath,
+    {
+      strokeDashoffset: 0,
+      duration: 1,
+      autoAlpha: 1,
+      ease: "power1.inOut",
+      stagger: 0.2,
+    },
+    "1"
+  );
+  tl.to(".line1-dot", { autoAlpha: 1 }, ">");
+
+  // SVG Icons
+  const ico = document.querySelectorAll(".svgIco");
+  gsap.set(ico, { autoAlpha: 0 });
+  tl.to(
+    ico,
+    {
+      autoAlpha: 1,
+      ease: "power1.inOut",
+      stagger: 0.1,
+    },
+    "+=0.01"
+  );
+
+  return tl;
+}
+
+// Slide 2 animation
+function playSlide2Animation() {
+  const tl = gsap.timeline();
+
+  gsap.set(".slide2back1 path", {
+    autoAlpha: 0,
+    scale: 0.5,
+    transformOrigin: "center",
+  });
+  gsap.set(".slide2line", { autoAlpha: 0 });
+  gsap.set(".slide2dot", { autoAlpha: 0 });
+  gsap.set(".slider2dot", { autoAlpha: 0 });
+  gsap.set(".slider2tab", { autoAlpha: 0, x: 200 });
+  gsap.set(".slider2cursor", { autoAlpha: 0 });
+
+  tl.to(
+    ".slide2back1 path",
+    {
+      autoAlpha: 1,
+      stagger: 0.2,
+      scale: 1,
+    },
+    0.1
+  );
+
+  tl.to(".slide2line", { autoAlpha: 1 }, "-=0.5");
+  tl.to(".slide2dot", { autoAlpha: 1, stagger: 0.15 }, ">");
+
+  const slider2line = document.querySelectorAll(
+    ".slider2line1 path, .slider2line2 path"
+  );
+  slider2line.forEach((el) => {
+    const length = el.getTotalLength();
+    gsap.set(el, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+      autoAlpha: 0,
+    });
+  });
+  tl.to(
+    slider2line,
+    {
+      strokeDashoffset: 0,
+      duration: 1,
+      autoAlpha: 1,
+      ease: "power1.inOut",
+      stagger: 0.2,
+    },
+    "1"
+  );
+
+  tl.to(".slider2dot", { autoAlpha: 1 }, ">");
+  tl.to(".slider2tab", { autoAlpha: 1, x: 100 }, ">");
+  tl.to(".slider2cursor", { autoAlpha: 1 }, ">");
+
+  return tl;
+}
+
+function playSlide3Animation() {
+  const tl = gsap.timeline();
+  gsap.set(".slider3back1", {
+    visibility: "hidden",
+    scale: 0.5,
+    transformOrigin: "center",
+  });
+  gsap.set(".slider3logo", { autoAlpha: 0 });
+  gsap.set(".slider3last", { autoAlpha: 0 });
+
+  tl.to(
+    ".slider3back1",
+    { visibility: "visible", stagger: 0.2, scale: 1, ease: "power1.inOut" },
+    "0"
+  );
+  const slider3line = document.querySelectorAll(".slider3line path");
+  slider3line.forEach((el) => {
+    const length = el.getTotalLength();
+    gsap.set(el, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+      autoAlpha: 0,
+    });
+  });
+  tl.to(
+    slider3line,
+    { autoAlpha: 1, strokeDashoffset: 0, ease: "power1.inOut" },
+    ">"
+  );
+
+  const slider3linePath = document.querySelectorAll(".slider3linePath path");
+  slider3linePath.forEach((el) => {
+    const length = el.getTotalLength();
+    gsap.set(el, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+      autoAlpha: 0,
+    });
+  });
+  tl.to(
+    slider3linePath,
+    {
+      autoAlpha: 1,
+      strokeDashoffset: 0,
+      ease: "power1.inOut",
+    },
+    ">"
+  );
+  tl.to(
+    ".slider3logo",
+    { autoAlpha: 1, stagger: 0.1, ease: "power1.inOut" },
+    ">"
+  );
+  tl.to(".slider3last", { autoAlpha: 1, ease: "power1.inOut" }, ">");
+
+  return tl;
+}
