@@ -1388,6 +1388,9 @@ body{
     box-shadow: 0 40px 62px -8px rgba(95, 92, 121, .26);
     border-radius: 4rem;
 }
+.svgMobile{
+    max-width: 30rem;
+}
 /* footer */
 .footer{
     background: linear-gradient(180deg, #fefefe, #fff3f3 50%, #faf5ff);

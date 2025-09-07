@@ -307,3 +307,46 @@ function playSlide3Animation() {
 
   return tl;
 }
+
+const tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".svgMobile", // 👈 replace with the container element for your SVG
+    start: "top 80%", // play when top of section hits 80% of viewport
+    toggleActions: "play none none reset",
+    // options: "onEnter onLeave onEnterBack onLeaveBack"
+    // play = play forward, reset = reset when scrolling back
+    markers: false, // set to true for debugging
+  },
+});
+
+const mobileline = document.querySelectorAll(".mobileline path");
+mobileline.forEach((el) => {
+  const length = el.getTotalLength();
+  gsap.set(el, {
+    strokeDasharray: length,
+    strokeDashoffset: length,
+    autoAlpha: 0,
+  });
+});
+tl4.to(
+  mobileline,
+  { autoAlpha: 1, strokeDashoffset: 0, duration: 2.5, ease: "power1.inOut" },
+  "0"
+);
+const mobileInside = document.querySelectorAll(".mobileInside path");
+mobileInside.forEach((el) => {
+  const length = el.getTotalLength();
+  gsap.set(el, {
+    strokeDasharray: length,
+    strokeDashoffset: length,
+    autoAlpha: 0,
+  });
+});
+tl4.to(
+  mobileInside,
+  { autoAlpha: 1, strokeDashoffset: 0, duration: 3, ease: "power1.inOut" },
+  "0.3"
+);
+
+tl4.to(".svgMobile", { display: "none", ease: "power1.inOut" }, ">");
+tl4.to(".phone_end", { autoAlpha: 1, ease: "power1.inOut" }, ">");
