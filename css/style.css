@@ -1387,6 +1387,7 @@ body{
     max-width: 30rem;
     box-shadow: 0 40px 62px -8px rgba(95, 92, 121, .26);
     border-radius: 4rem;
+    display: none;
 }
 .svgMobile{
     max-width: 30rem;

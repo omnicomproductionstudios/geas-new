@@ -310,12 +310,8 @@ function playSlide3Animation() {
 
 const tl4 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".svgMobile", // 👈 replace with the container element for your SVG
-    start: "top 80%", // play when top of section hits 80% of viewport
-    toggleActions: "play none none reset",
-    // options: "onEnter onLeave onEnterBack onLeaveBack"
-    // play = play forward, reset = reset when scrolling back
-    markers: false, // set to true for debugging
+    trigger: ".svgMobile",
+    start: "top 80%",
   },
 });
 
@@ -348,5 +344,5 @@ tl4.to(
   "0.3"
 );
 
-tl4.to(".svgMobile", { display: "none", ease: "power1.inOut" }, ">");
-tl4.to(".phone_end", { autoAlpha: 1, ease: "power1.inOut" }, ">");
+tl4.to(".svgMobile", 0.5, { display: "none", ease: "power1.inOut" }, ">");
+tl4.to(".phone_end", 0.5, { display: "block", ease: "power1.inOut" }, ">");
