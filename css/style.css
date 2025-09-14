@@ -254,497 +254,108 @@ body{
     /* scale: 1.2; */
 }
 
-/* about-section */
-.about-section h2{
-    position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 5rem;
-    font-weight: 800;
-    color: var(--color3);
-}
 
-.about-section p{
-    font-size: 3rem;
-    line-height: 1.3;
-    margin-bottom: 4rem;
-    
-    color: var(--color4);
-    font-weight: 300;
-    text-align: center;
+/* Card about*/
+.card-about{
+    /* background-color: var(--color2); */
+        /* background: linear-gradient(313deg, rgb(255, 204, 215) -7.58%, rgb(252, 244, 250) 98.03%); */
+            background: linear-gradient(360deg, #faf5ff, #fff3f3 77.67%, #fefefe) no-repeat bottom;
+        color: var(--color3);
 }
-.about-section p:last-child{
+.card-about .title{
+    margin-bottom: 6rem;
+}
+.card-about .title h2{
+    font-size: 3.6rem;
     margin-bottom: 0px;
 }
-
-
-.image-wrapper {
-  width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 12px;
-}
-.image-wrapper .photo {
-  width: 60%;
-  border-radius: 12px;
-    z-index: 1;
-}
-
-.vision{
-    /* background: url('/images/desktopLRBG.svg') left top no-repeat; */
-    background:linear-gradient(180deg,#faf5ff,#fff3f3 77.67%,#fefefe) no-repeat bottom;
-    background-size: cover;
-    padding: 25rem 0 15rem;
-}
-.vision .card{
+.card-about .card{
+    background-color: #ffccd7;
     border: 0px;
-    padding: 3rem;
-    border-radius: 16px;
-    /* border: 1px solid #ffcaca; */
-    background: linear-gradient(313deg, rgb(255, 204, 215) -7.58%, rgb(252, 244, 250) 98.03%);
-    text-align: center;
-    position: relative;
-    height: 100%;
-}
-.vision .card.two{
-    background: linear-gradient(314deg, #fcf4fa 4.9%, #cbc5e1 97.99%);
-}
-.vision .card img{
-    border: 1px solid #ffccd7;
-    border-bottom-width: 5px;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    padding: 2.5rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    background: linear-gradient(180deg, #fefefe, #fff3f3 50%, #faf5ff);
-    transition: all 1s ease;
-}
-.vision .card:hover img {
-  transform: rotate(360deg);
-}
-
-
-.vision .card.two img{
-    border: 1px solid #cbc5e1;
-    border-bottom-width: 5px;
-}
-.vision .card h3{
-    color: #0a2540;
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 140%;
-}
-.vision .card p{
-    font-size: 1.5rem;
-    line-height: 1.4;
-    color: var(--color1);
-}
-.vision .card ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    color: var(--color1);
-}
-
-.services .title{
-    position: sticky;
-    top: 15rem;
-    left: 0px;
-}
-.services .title .tag{
-    background: linear-gradient(180deg, #f38ab2, #f54c7a 85.78%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
-    font-weight: 300;
-    padding-bottom: 1rem;
-    margin-bottom: 3rem;
-    padding-left: 7rem;
-    position: relative;
-}
-.services .title .tag::before{
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 1.2rem;
-    width: 5rem;
-    height: 2px;
-    background: linear-gradient(180deg, #f38ab2, #f54c7a 85.78%);
-}
-.services .title h2{
-    font-weight: 500;
+    padding: 3rem 2rem;
     color: var(--color3);
-    font-size: 5.5rem;
-    text-wrap: balance;
-    color: var(--color4);
-}
-.services .title h2 .char {
-  display: inline-block;
-}
-.services .title h2 .word {
-  display: inline-block; /* keeps words together */
-  white-space: nowrap;   /* word can wrap as a unit */
-}
-@media only screen and (min-width: 1200px) {
-    .services .title{
-        padding-right: 1rem;
-    }
-}
-
-.services .card{
-    border: 0px;
-    margin-bottom: 4rem;
-}
-.services .card:last-child{
-    margin-bottom: 0px;
-}
-.services .card img{
+    height: 20rem;
     border-radius: 2rem;
-}
-.services .card .content{
-    margin: 2rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-.services .card h3{
-    color: var(--color3);
-    flex-basis: 70%;
-}
-
-.choose{
     position: relative;
 }
-.choose .container{
-    display: grid;
+.card-about .card h2{
+    font-size: 2.2rem;
+    margin-right: 20%;
 }
-.choose .title{
-    position: sticky;
-    top: 10rem;
+.card-about .card p{
+    margin-bottom: 0px;
 }
-.choose .title h2{
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--color3);
-    padding: 2.5rem 0;
-    text-align: center;
-}
-.choose .card{
-    border: 0px;
-    background: linear-gradient(314deg, #fcf4fa 4.9%, #cbc5e1 97.99%);
-    border-radius: 2.5rem;
-    min-height: 30rem;
-    margin-bottom: 3rem;
-    position: sticky;
-    top:0rem;
-    padding: 3rem 5rem 5rem 5rem;
-    border-top: #fff solid 2px;
-}
-.choose .card img{
+.card-about .card svg{
     position: absolute;
-    right: 0px;
-    bottom: -2rem;
-    z-index: -1;
-    opacity: .2;
-}
-.choose .card:nth-child(2){
-    top: 20rem;
-}
-.choose .card:nth-child(3){
-    top: 29rem;
-}
-.choose .card:nth-child(4){
-    top: 38rem;
-}
-.choose .card:nth-child(5){
-    top: 47rem;
-}
-.choose .card:nth-child(6){
-    top: 56rem;
-}
-
-.choose .card:nth-child(odd){
-    background: linear-gradient(313deg, rgb(255, 204, 215) -7.58%, rgb(252, 244, 250) 98.03%);
-}
-.choose .card h3{
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    font-weight: 300;
-}
-.choose .card p{
-    font-size: 1.8rem;
-    line-height: 1.4;
-    padding-right: 20rem;
-    font-weight: 300;
-}
-
-/* Understanding */
-.understanding{
-    background: linear-gradient(180deg, #faf5ff, #fff3f3 77.67%, #fefefe) no-repeat bottom;
-}
-.understanding .title{
-    margin-bottom: 4rem;
-}
-.understanding .title h2{
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--color3);
-    text-align: center;
-}
-.understanding .title p{
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--color1);
-    font-weight: 500;
-}
-.understanding .card{
-    border: 0px;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 12px;
-    background: #fff;
-    transition: transform .5s ease;
-    cursor: pointer;
-    background-color: inherit;
-}
-.understanding .card:hover {
-  transform: translateY(-8px);
-}
-.understanding .card .image{
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-.understanding .card .image .icon{
-    background: rgba(255, 255, 255, 0.15); /* translucent white */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);           /* the magic! */
-    -webkit-backdrop-filter: blur(3px);   /* Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: var(--color2);
-    opacity: 0;
-    transition: all 0.3s ease;
-    /* transform: translate(-50%, -50%) scale(0.8); */
-    transition: all .5s ease;
-}
-.understanding .card .image .icon a{
-    color: currentColor;
-    text-decoration: none;
-}
-.understanding .card:hover .image .icon{
-    opacity: 1;
-  transform: scale(1.2);
-}
-
-.understanding .card h3{
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1.5rem 0;
-    color: var(--color3);
-}
-.understanding .card h3 a{
-    text-decoration: none;
-    color: currentColor;
-    transition: all .3s ease;
-}
-.understanding .card:hover h3 a{
-    color: var(--color2);
-}
-/* Faq */
-.faq{
-    background: url('/images/desktopLRBG.svg') top left no-repeat;
-    background-size: cover;
-}
-.faq .title h2{
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--color3);
-    padding: 2.5rem 0;
-    text-align: center;
-}
-.accordion-item{
-    border-bottom: 0px;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-.accordion-header{
-    font-weight: 300;
-    border-radius: 5px;
-}
-.accordion-button{
-    font-size: 2rem;
-    background-color: #fabbd3;
-    color: var(--color3);
-    font-weight: 300;
-    padding: 2rem 3rem;
-    border-radius: 5px!important;
-}
-.accordion-button:hover{
-    background-color: var(--color2);
-}
-.accordion-button::after{
+    right: 2rem;
+    top: 2rem;
     width: 3rem;
     height: 3rem;
-    background-size: 3rem;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2346617b' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-.accordion-button:not(.collapsed) {
-    color: var(--color3);
-    background-color: #fabbd3;
-    box-shadow: inherit;
+.card-about .card svg path{
+    stroke: var(--color2);
 }
-.accordion-body{
-    padding: 2rem 3rem;
-    font-size: 1.6rem;
+.card-about .card.last-card{
+    justify-content: flex-start;
+    background-color: #cbc5e1;
+}
+.card-about .card.last-card h2{
+    font-size: 5rem;
+}
+.card-about .card.last-card p{
+    font-size: 2rem;
+}
+.card-about .card.last-card svg{
+    top: inherit;
+    bottom: 2rem;
+}
+.card-about .card.last-card svg path{
+    stroke: var(--color3);
 }
 
-/* testimonials */
-.testimonial .title h2{
-    font-size: 4rem;
-    font-weight: bold;
+.about-craft{
+    padding-top: 33rem;
+    padding-bottom: 15rem;
+    margin-top: -33rem;
+    background: url(/images/desktopRLBG.svg) no-repeat right bottom / cover;
+}
+.about-craft .title{
+    margin-bottom: 5rem;
+}
+.about-craft .card{
+    border: 0px;
+    border-radius: 2rem;
+    padding: 3rem;
     color: var(--color3);
-    text-align: center;
 }
-.testimonial .swiper-wrapper{
-    padding: 10rem 0;
-}
-.swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 2rem;
-    color: #fff;
-}
-.swiper-button-next, .swiper-button-prev{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    background-color: var(--color4);
-}
-.testimonial .swiper-slide{
+.about-craft .card .num{
+    border: #ccc solid 1px;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50px;
     display: flex;
-    justify-content: center;
-}
-.testi{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--color4); */
-    border-radius: 2rem;
-    position: relative;
-    min-height: 35rem;
-    max-width: 70rem;
-    margin-top: 7rem;
-    
+    font-weight: 500;
 }
-.testi i{
-    font-size: 40rem;
-    position: absolute;
-    color: #f2f2f2;
-    z-index: -1;
-    transform: rotate(13deg);
+.about-craft .card img{
+    border:0px;
+    margin: 4rem 0;
+    height: 25rem;
+    object-fit: cover;
+    border: #ccc solid 0.5px;
 }
-.testi img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    top: -7rem;
-}
-.testi .copy{
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 300;
+.about-craft .card h3{
+    font-size: 2.2rem;
     margin-bottom: 3rem;
 }
-.testi .name{
-    color: var(--color3);
-    font-size: 3.5rem;
-    font-weight: 300;
+.about-craft .card p{
+    font-size: 1.4rem;
+    margin-bottom: 0px;
 }
 
-/*  */
-.home-about_wrapper {
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 200rem;
-    display: flex;
-    position: relative;
-}
-.home-about_sticky {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: sticky;
-    top: 0;
-}
-.home-about_component {
-    padding:0 1.6rem;
-    justify-content: center;
-    align-items: center;
-    width: 12vw;
-    height: 10vh;
-    transition: padding .6s;
-    display: flex;
-    position: relative;
-}
-.home-about_heading {
-    font-size: 6rem;
-    white-space: nowrap;
-    position: absolute;
-}
-.home-about_heading._1 {
-    right: calc(100% + .25rem);
-}
-.home-about_heading._2 {
-    left: calc(100% + .25rem);
-}
-.home-about_img-text{
-    position: absolute;
-    color: #fff;
-    font-size: 6rem;
-    white-space: nowrap;
-}
-.home-about_img-wrap {
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    transition: border-radius .6s;
-    display: flex;
-    position: relative;
-    overflow: clip;
-}
-.home-about_img {
-    object-fit: cover;
-    width: 100vw;
-    min-width: 100vw;
-    max-width: none;
-    height: 100vh;
-    min-height: 100vh;
-}
 /* footer */
 .site_footer{
     background: linear-gradient(180deg, #fefefe, #fff3f3 50%, #faf5ff);
@@ -1100,6 +711,13 @@ body{
     padding-top: 17rem;
     padding-bottom: 15rem;
     background:  url('/images/desktopRLBG.svg') no-repeat right bottom / contain;
+}
+.about-product{
+    background: inherit;
+}
+.about-product .left{
+    padding-right: inherit;
+    padding-left: 9%;
 }
 .product .left{
     padding-right: 9%;
@@ -1501,4 +1119,220 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
+/* why choose */
+/* .why_choose .title{
+    max-width: 35rem;
+} */
+ .carAnimate{
+    position: relative;
+ }
+
+
+.why_choose_arrow{
+    margin-left: 3rem;
+}
+.why_choose{
+    padding-top: 15rem;
+    position: relative;
+}
+.why_choose .title h2{
+    font-size: 6.6rem;
+    margin-bottom: 2.5rem;
+}
+.why_choose .title p{
+    font-size: 1.4rem;
+    font-weight: 450;
+    color: #7a8c9f;
+    margin-bottom: 3rem;
+}
+.why_choose .btn{
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: inherit;
+}
+.why_choose .btn i{
+    font-size: 10px;
+    right: -3px;
+    top: 1px;
+}
+.why_choose .wrap{
+    width: 75%;
+    margin-left: auto;
+    margin-top: -9rem;
+}
+.slider3-pagination {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 20px;
+}
+
+.slider3-pagination .tab {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #fff;
+  transition: all 0.3s ease;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider3-pagination .swiper-pagination-bullet{
+    width: inherit;
+    height: inherit;
+    border: 0px;
+    border-radius: 0px;
+    /* border-right: #ccc dashed 1px; */
+    /* border-left: #ccc dashed 1px; */
+    margin: 0px!important;
+    opacity: 1;
+    position: relative;
+}
+.slider3-pagination .tab.swiper-pagination-bullet-active {
+  background: #fdf1f6;
+  background: linear-gradient(90deg,rgba(249,141,198,.4),rgba(255,201,214,.4) 50%,rgba(255,226,210,.4));
+}
+.slider3-pagination .tab .tab-label{
+    display: block;
+    text-align: center;
+    color: #c3d0e0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
+.slider3-pagination .tab img {
+    width: 10.1rem;
+    height: 4.5rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.9rem;
+  filter: grayscale(30%);
+  opacity: .5;
+}
+.slider3-pagination .tab.swiper-pagination-bullet-active .tab-label{
+    color: #000;
+}
+.slider3-pagination .tab.swiper-pagination-bullet-active .tab-label img{
+    filter: inherit;
+    opacity: 1;
+}
+
+
+.slider3-pagination .progress-bar {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 2.3px;
+  width: 100%;
+  background: inherit;
+  overflow: hidden;
+}
+
+.slider3-pagination .progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg,#f9d5c2,#efb1bf 50%,#f98dc6);
+  transition: width 0.1s linear;
+}
+
+
+
+.slider3 .swiper-slide{
+    height: 46rem;
+}
+.cards-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards-wrapper .cardPick{
+    position: absolute;
+    width: 35rem;
+    z-index: 1;
+}
+.cards-wrapper .cardPick.two{
+    transform: rotate(-19deg);
+    transform-origin: left 110px;
+
+}
+.cards-wrapper .cardPick.one{
+    transform: rotate(12.444deg);
+    transform-origin: left bottom;
+}
+.cards-wrapper .cardPick img{
+    box-shadow: -1.3571428571rem 7.0714285714rem 3.65rem -4.2142857143rem rgba(115,1,1,.33);
+}
+
+
+
+
+/*  */
+.effect {
+  position: absolute;
+  right: 63rem;
+  top: 26rem;
+}
+
+.circle {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 7px solid #f4e4fc; /* thick starting border */
+  background: transparent;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.delay1 {
+  animation: waves 3.5s linear 0s infinite;
+}
+
+.delay2 {
+  animation: waves 3.5s linear 0.7s infinite;
+}
+
+.delay3 {
+  animation: waves 3.5s linear 1.4s infinite;
+}
+
+.delay4 {
+  animation: waves 3.5s linear 2.1s infinite;
+}
+
+.delay5 {
+  animation: waves 3.5s linear 2.8s infinite;
+}
+/* New slower circle */
+
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    border-width: 7px;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+
 

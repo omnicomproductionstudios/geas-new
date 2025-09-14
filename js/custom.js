@@ -1,14 +1,11 @@
 "use strict";
-var swiper = new Swiper(".heroSwiper", {
+
+// Hero Swiper
+var heroSwiper = new Swiper(".heroSwiper", {
   effect: "fade",
-  fadeEffect: {
-    crossFade: true, // smooth fade between slides
-  },
+  fadeEffect: { crossFade: true },
   speed: 300,
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
+  autoplay: { delay: 6000, disableOnInteraction: false },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -26,47 +23,33 @@ var swiper = new Swiper(".heroSwiper", {
   },
 });
 
-swiper.on("autoplayTimeLeft", function (s, time, progress) {
-  const circumference = 2 * Math.PI * 20; // r=20
-
-  // Reset all progress circles
-  document
-    .querySelectorAll(".swiper-pagination-bullet .progress")
-    .forEach((circle) => {
+heroSwiper.on("autoplayTimeLeft", function (s, time, progress) {
+  const circumference = 2 * Math.PI * 20;
+  document.querySelectorAll(".swiper-pagination-bullet .progress")
+    .forEach(circle => {
       circle.style.strokeDasharray = circumference;
-      circle.style.strokeDashoffset = circumference; // start empty
+      circle.style.strokeDashoffset = circumference;
     });
 
-  // Animate only the active one (0 → 100)
-  const active = document.querySelector(
-    ".swiper-pagination-bullet-active .progress"
-  );
+  const active = document.querySelector(".swiper-pagination-bullet-active .progress");
   if (active) {
     active.style.strokeDasharray = circumference;
-    active.style.strokeDashoffset =
-      circumference - circumference * (1 - progress);
+    active.style.strokeDashoffset = circumference - circumference * (1 - progress);
   }
 });
 
-var swiper = new Swiper(".mySwiper", {
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// My Swiper
+var mySwiper = new Swiper(".mySwiper", {
+  autoplay: { delay: 3000, disableOnInteraction: false },
+  navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
 });
 
-var swiper = new Swiper(".slider2", {
+// Slider2
+var slider2 = new Swiper(".slider2", {
   effect: "fade",
   fadeEffect: { crossFade: true },
   speed: 300,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
+  autoplay: { delay: 4000, disableOnInteraction: false },
   pagination: {
     el: ".custom-pagination",
     clickable: true,
@@ -84,23 +67,18 @@ var swiper = new Swiper(".slider2", {
           <span class="tab-label">${labels[index]}</span>
           <div class="progress-bar"><span></span></div>
           <svg class="arrow" viewBox="0 0 23 23">
-            <path d="M2 2L21 2M21 2L21 21M21 2L2 21" 
-              stroke="#F38AB2" stroke-width="3"/>
+            <path d="M2 2L21 2M21 2L21 21M21 2L2 21" stroke="#F38AB2" stroke-width="3"/>
           </svg>
         </div>`;
     },
   },
 });
 
-// Animate progress bar with autoplay
-swiper.on("autoplayTimeLeft", function (s, time, progress) {
-  document
-    .querySelectorAll(".custom-pagination .progress-bar span")
-    .forEach((el) => (el.style.width = "0%"));
+slider2.on("autoplayTimeLeft", function (s, time, progress) {
+  document.querySelectorAll(".custom-pagination .progress-bar span")
+    .forEach(el => (el.style.width = "0%"));
 
-  const active = document.querySelector(
-    ".custom-pagination .swiper-pagination-bullet-active .progress-bar span"
-  );
+  const active = document.querySelector(".custom-pagination .swiper-pagination-bullet-active .progress-bar span");
   if (active) {
     active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
   }
@@ -108,28 +86,71 @@ swiper.on("autoplayTimeLeft", function (s, time, progress) {
 
 let tl1, tl2, tl3;
 
-swiper.on("slideChange", function () {
-  if (swiper.activeIndex === 0) {
+slider2.on("slideChange", function () {
+  if (slider2.activeIndex === 0) {
     if (tl1) tl1.restart();
     else tl1 = playSlide1Animation();
   }
-  if (swiper.activeIndex === 1) {
+  if (slider2.activeIndex === 1) {
     if (tl2) tl2.restart();
     else tl2 = playSlide2Animation();
   }
-  if (swiper.activeIndex === 2) {
+  if (slider2.activeIndex === 2) {
     if (tl3) tl3.restart();
     else tl3 = playSlide3Animation();
   }
 });
 
-// Run immediately when Swiper is ready
-swiper.on("init", function () {
-  // Force the animation for the first visible slide
-  if (swiper.activeIndex === 0) tl1 = playSlide1Animation();
-  if (swiper.activeIndex === 1) tl2 = playSlide2Animation();
-  if (swiper.activeIndex === 2) tl3 = playSlide3Animation();
+slider2.on("init", function () {
+  if (slider2.activeIndex === 0) tl1 = playSlide1Animation();
+  if (slider2.activeIndex === 1) tl2 = playSlide2Animation();
+  if (slider2.activeIndex === 2) tl3 = playSlide3Animation();
+});
+slider2.init();
+
+// Slider3
+var slider3 = new Swiper(".slider3", {
+  effect: "fade",
+  fadeEffect: { crossFade: true },
+  speed: 300,
+  autoplay: { delay: 4000, disableOnInteraction: false },
+  pagination: {
+    el: ".slider3-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      const labels = [
+        `<img src="images/mastercard.png" alt="Mastercard" /> <span>MasterCard World Elite</span>`,
+        `<img src="images/visa.png" alt="Visa" /> <span>Visa Signature</span>`,
+        `<img src="images/union.png" alt="UnionPay" /> <span>UnionPay Premium</span>`,
+      ];
+      return `
+        <div class="tab ${className}">
+          <span class="tab-label">${labels[index]}</span>
+          <div class="progress-bar"><span></span></div>
+        </div>`;
+    },
+  },
+  on: {
+    slideChangeTransitionStart: function () {
+      const currentSlide = this.slides[this.activeIndex];
+      const targets = currentSlide.querySelectorAll(".cardPick");
+
+      gsap.from(targets, {
+        duration: 0.5,
+        rotate: 0,
+        ease: "power1.inOut",
+        delay: 0.5,
+      });
+    },
+  },
 });
 
-// If you are using Swiper with modules, you must explicitly init
-swiper.init();
+slider3.on("autoplayTimeLeft", function (s, time, progress) {
+  document.querySelectorAll(".slider3-pagination .progress-bar span")
+    .forEach(el => (el.style.width = "0%"));
+
+  const active = document.querySelector(".slider3-pagination .swiper-pagination-bullet-active .progress-bar span");
+  if (active) {
+    active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
+  }
+});
