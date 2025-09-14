@@ -279,6 +279,8 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
+    border: transparent solid 1px;
+    border-bottom: transparent solid 3px;
 }
 .card-about .card h2{
     font-size: 2.2rem;
@@ -314,7 +316,14 @@ body{
 .card-about .card.last-card svg path{
     stroke: var(--color3);
 }
-
+.card-about .card:hover{
+    border: var(--color2) solid 1px;
+    border-bottom: var(--color2) solid 3px;
+}
+.card-about .card.last-card:hover{
+    border: var(--color5) solid 1px;
+    border-bottom: var(--color5) solid 3px;
+}
 .about-craft{
     padding-top: 33rem;
     padding-bottom: 15rem;
