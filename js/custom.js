@@ -25,16 +25,20 @@ var heroSwiper = new Swiper(".heroSwiper", {
 
 heroSwiper.on("autoplayTimeLeft", function (s, time, progress) {
   const circumference = 2 * Math.PI * 20;
-  document.querySelectorAll(".swiper-pagination-bullet .progress")
-    .forEach(circle => {
+  document
+    .querySelectorAll(".swiper-pagination-bullet .progress")
+    .forEach((circle) => {
       circle.style.strokeDasharray = circumference;
       circle.style.strokeDashoffset = circumference;
     });
 
-  const active = document.querySelector(".swiper-pagination-bullet-active .progress");
+  const active = document.querySelector(
+    ".swiper-pagination-bullet-active .progress"
+  );
   if (active) {
     active.style.strokeDasharray = circumference;
-    active.style.strokeDashoffset = circumference - circumference * (1 - progress);
+    active.style.strokeDashoffset =
+      circumference - circumference * (1 - progress);
   }
 });
 
@@ -75,10 +79,13 @@ var slider2 = new Swiper(".slider2", {
 });
 
 slider2.on("autoplayTimeLeft", function (s, time, progress) {
-  document.querySelectorAll(".custom-pagination .progress-bar span")
-    .forEach(el => (el.style.width = "0%"));
+  document
+    .querySelectorAll(".custom-pagination .progress-bar span")
+    .forEach((el) => (el.style.width = "0%"));
 
-  const active = document.querySelector(".custom-pagination .swiper-pagination-bullet-active .progress-bar span");
+  const active = document.querySelector(
+    ".custom-pagination .swiper-pagination-bullet-active .progress-bar span"
+  );
   if (active) {
     active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
   }
@@ -146,11 +153,39 @@ var slider3 = new Swiper(".slider3", {
 });
 
 slider3.on("autoplayTimeLeft", function (s, time, progress) {
-  document.querySelectorAll(".slider3-pagination .progress-bar span")
-    .forEach(el => (el.style.width = "0%"));
+  document
+    .querySelectorAll(".slider3-pagination .progress-bar span")
+    .forEach((el) => (el.style.width = "0%"));
 
-  const active = document.querySelector(".slider3-pagination .swiper-pagination-bullet-active .progress-bar span");
+  const active = document.querySelector(
+    ".slider3-pagination .swiper-pagination-bullet-active .progress-bar span"
+  );
   if (active) {
     active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
   }
 });
+
+// Inspect disable
+// Disable right-click
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+// Block DevTools shortcuts
+document.onkeydown = function (e) {
+  if (
+    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) || // Ctrl+Shift+J
+    (e.ctrlKey && (e.key === "U" || e.key === "u")) || // Ctrl+U
+    e.key === "F12" // F12
+  ) {
+    e.preventDefault();
+    return false;
+  }
+};
+// Detect if DevTools is open
+setInterval(function () {
+  if (
+    window.outerWidth - window.innerWidth > 200 ||
+    window.outerHeight - window.innerHeight > 200
+  ) {
+    document.body.innerHTML = "<h1>DevTools is disabled</h1>";
+  }
+}, 1000);
