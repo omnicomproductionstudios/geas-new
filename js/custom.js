@@ -167,25 +167,25 @@ slider3.on("autoplayTimeLeft", function (s, time, progress) {
 
 // Inspect disable
 // Disable right-click
-document.addEventListener("contextmenu", (e) => e.preventDefault());
-// Block DevTools shortcuts
-document.onkeydown = function (e) {
-  if (
-    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) || // Ctrl+Shift+I
-    (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) || // Ctrl+Shift+J
-    (e.ctrlKey && (e.key === "U" || e.key === "u")) || // Ctrl+U
-    e.key === "F12" // F12
-  ) {
-    e.preventDefault();
-    return false;
-  }
-};
-// Detect if DevTools is open
-setInterval(function () {
-  if (
-    window.outerWidth - window.innerWidth > 200 ||
-    window.outerHeight - window.innerHeight > 200
-  ) {
-    document.body.innerHTML = "<h1>DevTools is disabled</h1>";
-  }
-}, 1000);
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
+// // Block DevTools shortcuts
+// document.onkeydown = function (e) {
+//   if (
+//     (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) || // Ctrl+Shift+I
+//     (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) || // Ctrl+Shift+J
+//     (e.ctrlKey && (e.key === "U" || e.key === "u")) || // Ctrl+U
+//     e.key === "F12" // F12
+//   ) {
+//     e.preventDefault();
+//     return false;
+//   }
+// };
+// // Detect if DevTools is open
+// setInterval(function () {
+//   if (
+//     window.outerWidth - window.innerWidth > 200 ||
+//     window.outerHeight - window.innerHeight > 200
+//   ) {
+//     document.body.innerHTML = "<h1>DevTools is disabled</h1>";
+//   }
+// }, 1000);
