@@ -23,22 +23,6 @@ tl.staggerFrom(
 );
 tl.from(".about-arrow", 1, { y: "-100%", ease: "power1.inOut" });
 
-tl.from(
-  [".copy1, .copy2"],
-  1,
-  {
-    scale: 0,
-    rotate: 70,
-    ease: "power1.inOut",
-    onComplete: () => {
-      tl.to([".copy1 h3, .copy1 p, .copy2 h3, .copy2 p, .copy2 .icon"], 0.5, {
-        autoAlpha: 1,
-        ease: "power1.inOut",
-      });
-    },
-  },
-  0.4
-);
 gsap.from([".product .left", ".slider2"], {
   duration: 1,
   autoAlpha: 0,
@@ -365,7 +349,6 @@ tl4.to(
 tl4.to(".svgMobile", 0.5, { display: "none", ease: "power1.inOut" }, ">");
 tl4.to(".phone_end", 0.5, { display: "block", ease: "power1.inOut" }, ">");
 
-
 const why_choose_arrow = document.querySelector(".why_choose_arrow path");
 
 if (why_choose_arrow) {
@@ -374,21 +357,22 @@ if (why_choose_arrow) {
   // prepare stroke
   why_choose_arrow.style.strokeDasharray = length;
   why_choose_arrow.style.strokeDashoffset = length;
-gsap.set('.why_choose_circle', {autoAlpha:0})
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".why_choose_arrow",   // parent section/container
-      start: "top 80%",
-      end: "bottom 40%",
-      toggleActions: "play none none reverse",
-      // markers: true,
-    }
-  })
-  
-  .fromTo(why_choose_arrow, 
-    { strokeDashoffset: -length },
-    { strokeDashoffset: 0, duration: 2, ease: "power2.out" }
-  )
-  .to('.why_choose_circle', {autoAlpha:1}, )
-  
+  gsap.set(".why_choose_circle", { autoAlpha: 0 });
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".why_choose_arrow", // parent section/container
+        start: "top 80%",
+        end: "bottom 40%",
+        toggleActions: "play none none reverse",
+        // markers: true,
+      },
+    })
+
+    .fromTo(
+      why_choose_arrow,
+      { strokeDashoffset: -length },
+      { strokeDashoffset: 0, duration: 2, ease: "power2.out" }
+    )
+    .to(".why_choose_circle", { autoAlpha: 1 });
 }
