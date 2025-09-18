@@ -25,6 +25,9 @@ body{
     line-height: 1.3;
     background-color: #fefefe;
 }
+h1, h2, h3, h4, h5, h6{
+    color: var(--color3);
+}
 .space_top{
     padding-top: var(--space);
 }
@@ -1350,3 +1353,124 @@ body{
 }
 
 
+/* Exam page */
+.exam-banner{
+    background: linear-gradient(180deg, #faf5ff, #fff3f3 77.67%, #fefefe) no-repeat bottom;
+    /* background-image: url('/images/grid_1920.svg'); */
+    background-position: 50%, 50%, 0 0, 50%;
+    background-size: cover, cover, auto, cover;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+}
+.exam-banner .container {
+    max-width: 1230px;
+}
+.exam-banner .title .tag{
+    margin-bottom: 2rem;
+}
+.exam-banner .title h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color3);
+}
+.exam-banner .title p{
+    padding: 2.5rem 0;
+}
+.exam-banner .dashboard{
+    position: relative;
+    text-align: right;
+}
+.exam-banner .dashboard .score{
+    max-width: 40rem;
+    margin-left: auto;
+    background-color: var(--color1);
+    border-radius: 2rem;
+}
+
+.exam-banner .dashboard .bar{
+    position: absolute;
+    bottom: -10rem;
+    left: 0rem;
+    max-width: 35rem;
+}
+
+.proven .top{
+    background: url('/images/exam/pattern.webp') left top / cover no-repeat,
+  linear-gradient(314deg, #fcf4fa 4.9%, #cbc5e1 97.99%);;
+    color: var(--color3);
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    position: relative;
+}
+.proven .top h3{
+    font-size: 2rem;
+    color: var(--color3);
+    text-transform: uppercase;
+}
+.proven .top .icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 2rem;
+    opacity: .5;
+}
+.proven .top p{
+    margin-bottom: 0px;
+    color: var(--color1);
+}
+.proven .bottom .frame{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+.proven .top.last{
+    direction: rtl;
+}
+.proven .top.last .icon{
+    right: inherit;
+    left: 1.5rem;
+}
+.proven .middle{
+    background: 
+  url('/images/exam/pattern.webp') center center / cover no-repeat,
+  linear-gradient(93deg, #ffe1e1 -33.46%, #f7e0e8 59.02%, #fffcfd 151.5%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: var(--color3);
+    position: relative;
+}
+.proven .middle h3{
+    color: var(--color3);
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.proven .middle .icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 2rem;
+    opacity: .5;
+}
+.proven .middle .fect{
+    display: inline-block;
+    background: inherit;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.proven .middle p{
+    color: var(--color1);
+    margin-bottom: 2rem;
+}
