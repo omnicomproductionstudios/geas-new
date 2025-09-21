@@ -164,28 +164,28 @@ slider3.on("autoplayTimeLeft", function (s, time, progress) {
     active.style.width = ((1 - progress) * 100).toFixed(1) + "%";
   }
 });
-
-// Inspect disable
-// Disable right-click
-// document.addEventListener("contextmenu", (e) => e.preventDefault());
-// // Block DevTools shortcuts
-// document.onkeydown = function (e) {
-//   if (
-//     (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) || // Ctrl+Shift+I
-//     (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) || // Ctrl+Shift+J
-//     (e.ctrlKey && (e.key === "U" || e.key === "u")) || // Ctrl+U
-//     e.key === "F12" // F12
-//   ) {
-//     e.preventDefault();
-//     return false;
-//   }
-// };
-// // Detect if DevTools is open
-// setInterval(function () {
-//   if (
-//     window.outerWidth - window.innerWidth > 200 ||
-//     window.outerHeight - window.innerHeight > 200
-//   ) {
-//     document.body.innerHTML = "<h1>DevTools is disabled</h1>";
-//   }
-// }, 1000);
+const testiSwiper = new Swiper(".testiSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  freeMode: true,
+  delay: 0,
+  loop: true,
+  freeModeMomentum: false,
+  speed: 7000, // how long to translate one wrapper length
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  allowTouchMove: false,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
