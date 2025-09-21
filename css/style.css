@@ -1814,10 +1814,9 @@ h1, h2, h3, h4, h5, h6{
 .faq{
    background: linear-gradient(360deg, #faf5ff, #fff3f3 77.67%, #fefefe) no-repeat bottom;
 }
-/* .faq.no-bg{
-    background: inherit;
-    background-color: #fff;
-} */
+.faq.no-bg{
+    background: linear-gradient(360deg, #faf5ff, #ffffff 77.67%, #ffffff) no-repeat bottom;
+}
 /* Remove focus outline & box shadow */
 .accordion-button:focus {
   box-shadow: none;
