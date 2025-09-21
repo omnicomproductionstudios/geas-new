@@ -167,7 +167,7 @@ slider3.on("autoplayTimeLeft", function (s, time, progress) {
 const testiSwiper = new Swiper(".testiSwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
-  freeMode: true,
+  freeMode: false,
   delay: 0,
   loop: true,
   freeModeMomentum: false,

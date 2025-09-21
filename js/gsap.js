@@ -376,13 +376,20 @@ if (why_choose_arrow) {
     )
     .to(".why_choose_circle", { autoAlpha: 1 });
 }
+const bar = document.querySelector(".process-progress-bar");
+const inner = document.querySelector(".process-progress-inner");
+
+// Calculate available distance
+const distance = bar.offsetHeight - inner.offsetHeight;
 
 gsap.to(".process-progress-inner", {
-  y: "100%",
+  y: distance,
+  ease: "none",
   scrollTrigger: {
     trigger: ".process-widget-block",
-    start: "top 10%",
-    end: "bottom -30%",
-    scrub: 3,
+    start: "top center",
+    end: "bottom 30%",
+    scrub: true,
+    // markers: true,
   },
 });
