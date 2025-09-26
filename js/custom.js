@@ -62,6 +62,9 @@ var slider2 = new Swiper(".slider2", {
         "UNIQUE CUSTOMER JOURNEY",
         "PREMIUM ACCOUNTS",
         "COMPANY IS LICENSED IN SINGAPORE",
+        "UNIQUE CUSTOMER JOURNEY",
+        "PREMIUM ACCOUNTS",
+        "COMPANY IS LICENSED IN SINGAPORE",
       ];
       const number = (index + 1).toString().padStart(2, "0");
 
@@ -106,12 +109,27 @@ slider2.on("slideChange", function () {
     if (tl3) tl3.restart();
     else tl3 = playSlide3Animation();
   }
+  if (slider2.activeIndex === 4) {
+    if (tl1) tl1.restart();
+    else tl1 = playSlide1Animation();
+  }
+  if (slider2.activeIndex === 5) {
+    if (tl2) tl2.restart();
+    else tl2 = playSlide2Animation();
+  }
+  if (slider2.activeIndex === 6) {
+    if (tl3) tl3.restart();
+    else tl3 = playSlide3Animation();
+  }
 });
 
 slider2.on("init", function () {
   if (slider2.activeIndex === 0) tl1 = playSlide1Animation();
   if (slider2.activeIndex === 1) tl2 = playSlide2Animation();
   if (slider2.activeIndex === 2) tl3 = playSlide3Animation();
+  if (slider2.activeIndex === 3) tl1 = playSlide1Animation();
+  if (slider2.activeIndex === 4) tl2 = playSlide2Animation();
+  if (slider2.activeIndex === 5) tl3 = playSlide3Animation();
 });
 slider2.init();
 
