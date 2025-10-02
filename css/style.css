@@ -796,8 +796,6 @@ h1, h2, h3, h4, h5, h6{
 
 /* Product */
 .product{
-    padding-top: 17rem;
-    padding-bottom: 15rem;
     background:  url('/images/desktopRLBG.svg') no-repeat right bottom / contain;
 }
 .about-product{

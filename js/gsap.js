@@ -62,19 +62,18 @@ gsap.from([".account .box"], {
   },
 });
 
-gsap.from([".price .title > *"], {
-  duration: 1,
-  autoAlpha: 0,
-  y: 120,
-  stagger: 0.1,
-  ease: "power1.inOut",
-  scrollTrigger: {
-    trigger: ".price",
-    start: "top 30%",
-    end: "bottom 20%",
-    // markers: true,
-  },
-});
+// gsap.from([".price .title > *"], {
+//   duration: 1,
+//   autoAlpha: 0,
+//   y: 120,
+//   stagger: 0.1,
+//   ease: "power1.inOut",
+//   scrollTrigger: {
+//     trigger: ".price",
+//     start: "top 30%",
+//     end: "bottom 20%",
+//   },
+// });
 
 gsap.from([".mobile h2, .features-list, .store"], {
   duration: 1,
