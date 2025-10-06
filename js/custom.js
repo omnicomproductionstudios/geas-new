@@ -183,27 +183,34 @@ slider3.on("autoplayTimeLeft", function (s, time, progress) {
   }
 });
 const testiSwiper = new Swiper(".testiSwiper", {
-  slidesPerView: 3,
+  slidesPerView: 3, // default slides per view
   spaceBetween: 20,
-  freeMode: false,
-  delay: 0,
   loop: true,
-  freeModeMomentum: false,
-  speed: 7000, // how long to translate one wrapper length
+  speed: 5000, // continuous speed
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
   },
-  allowTouchMove: false,
+  freeMode: true,
+  freeModeMomentum: false,
+  allowTouchMove: true,
+  observer: true,
+  observeParents: true,
   breakpoints: {
-    640: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
+    0: { slidesPerView: 1 },
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
   },
+});
+
+// Pause autoplay on hover
+const swiperEl = document.querySelector(".testiSwiper");
+
+swiperEl.addEventListener("mouseenter", () => {
+  testiSwiper.autoplay.stop();
+});
+
+swiperEl.addEventListener("mouseleave", () => {
+  testiSwiper.autoplay.start();
 });
