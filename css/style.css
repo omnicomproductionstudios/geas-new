@@ -271,6 +271,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     color: var(--color3);
     padding: 2.5rem 0;
+    text-align: balance;
 }
 .about .content p{
     font-size: 1.6rem;
