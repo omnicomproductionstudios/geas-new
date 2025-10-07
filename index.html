@@ -35,7 +35,7 @@
 
         setTimeout(() => {
           loader.style.display = "none";
-          content.style.display = "grid";
+          // content.style.display = "grid";
         }, 600);
       });
     </script>
@@ -3668,7 +3668,7 @@
               </div>
               <div class="col-md-8">
                 <div class="box">
-                  <div class="row g-md-5 g-3">
+                  <div class="row g-md-5 g-4">
                     <div class="col-sm-6">
                       <div class="standard inside">
                         <div class="name">
@@ -4349,7 +4349,17 @@
     <script src="js/custom.js"></script>
     <script src="js/gsap.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: 'mobile',
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
     </script>
   </body>
 </html>

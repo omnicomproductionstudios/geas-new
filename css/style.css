@@ -181,8 +181,17 @@ h1, h2, h3, h4, h5, h6{
     position: fixed;
     width: 100%;
     left: 0px;
-    top: 15px;
+    top: 0;
+    padding-top: 15px;
     z-index: 111;
+    background: transparent;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+}
+.site_header.scrolled {
+  background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
+  backdrop-filter: blur(2px);           /* frosted glass blur */
+  -webkit-backdrop-filter: blur(2px);   /* Safari support */
+  box-shadow: 0 2px 6px rgb(0 0 0 / 4%) /* soft shadow */
 }
 .navbar-nav{
     border-radius: .8571428571rem;
@@ -217,6 +226,40 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color2);
 }
 
+@media only screen and (max-width:992px){
+    .navbar-nav{
+        border: 0px;
+        background-color: var(--color3);
+    }
+    .navbar-nav .nav-item{
+        width: 100%;
+        border-bottom: var(--color1) solid 1px;
+        text-align: center;
+    }
+    .navbar-nav .nav-item:last-child{
+        border-bottom: 0px;
+    }
+    .navbar-expand-lg .btn{
+        width: 100%;
+        padding: 8px 5px!important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        color: #fff;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 1.5rem 0.5rem;
+    }
+    .navbar-toggler{
+        border: 0px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: inherit;
+        outline: 0px;
+    }
+    .navbar-toggler-icon{
+        width: 3rem;
+    }
+}
 .about {
     position: relative;
     padding: 18rem 0;
@@ -743,7 +786,31 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 500;
 }
 
-
+@media only screen and (max-width: 1024px){
+    .heroSwiper .swiper-slide{
+        height: 60rem;
+    }
+    .home_hero_left .rose{
+        right: 0px;
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .heroSwiper .swiper-slide{
+        height: 60rem;
+    }
+    .home_hero_left{
+        padding-right: 0px;
+    }
+    .home_hero_left .copy{
+        margin-bottom: 3rem;
+    }
+    .home_hero_left .rose{
+        top: -3rem;
+        right: 0px;
+    }
+    
+}
 /* Product slider */
 
 .custom-pagination {
@@ -1502,6 +1569,11 @@ h1, h2, h3, h4, h5, h6{
     left: 0rem;
     max-width: 35rem;
 }
+@media only screen and (max-width:992px){
+    .exam-banner .dashboard .line{
+        display: none;
+    }
+}
 
 .proven .top{
     background: url('/images/exam/pattern.webp') left top / cover no-repeat,
@@ -2011,7 +2083,7 @@ border-bottom-left-radius:2rem;
     overflow: hidden;
     margin-bottom: 1rem;
     transition: all .3s ease;
-    width: 40rem;
+    max-width: 40rem;
     background-color: #fff;
 }
 .pricing_plan .nav-link img{
@@ -2105,6 +2177,7 @@ border-bottom-left-radius:2rem;
     display: flex;
     gap: 7rem;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 .pricing_plan .bottom .pic img{
     max-width: 30rem;
@@ -2118,7 +2191,7 @@ border-bottom-left-radius:2rem;
     font-size: 2.5rem;
 }
 .pricing_plan .bottom .info{
-    width: 100%;
+    flex-basis: 50%;
 }
 .pricing_plan .bottom ul{
     list-style: none;
@@ -2138,6 +2211,63 @@ border-bottom-left-radius:2rem;
 }
 .pricing_plan .d-flex{
     gap: 3rem;
+}
+@media only screen and (max-width:1150px){
+    .pricing_plan .bottom .pic img{
+        display: none;
+    }
+}
+@media only screen and (max-width:992px){
+    /* .big_tab{
+        flex-wrap: wrap;
+    } */
+    .pricing_plan .bottom .pic img, .pricing_plan .nav-link .tb_link{
+        display: none;
+    }
+    .pricing_plan .bottom{
+        gap: 2rem;
+    }
+    .pricing_plan .nav-link p{
+        display: none;
+    }
+    .pricing_plan .nav-link{
+        width: 18rem;
+    }
+    .pricing_plan .nav-link img{
+        display: none;
+    }
+    .pricing_plan .nav-link::before{
+        height: 0rem;
+        width: 0rem;
+    }
+    .pricing_plan .nav-link h2{
+        font-size: 1.5rem;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .pricing_plan .nav-link{
+        padding: 1rem;
+        border-radius: 6px;
+    }
+    .pricing_plan .nav-pills .nav-link.active::before{
+        border-radius: 6px;
+    }
+    .pricing_plan .top{
+        flex-wrap: wrap;
+    }
+    .pricing_plan .bottom .info{
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .big_tab{
+        flex-wrap: wrap;
+    } 
+    .pricing_plan .nav{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .growth{
@@ -3043,6 +3173,8 @@ border-bottom-left-radius:2rem;
     justify-content: space-between;
     margin-bottom: 7rem;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 .closer .inner .title h2{
     color: #fff;
@@ -3133,7 +3265,31 @@ border-bottom-left-radius:2rem;
 .closer .cards .card .icon.three{
     background-color: #fbe274;
 }
-
+@media only screen and (max-width:992px){
+    .closer .inner{
+        padding: 2rem;
+    }
+    .closer .stream{
+        padding: 2rem;
+    }
+    .closer .stream p{
+        margin-bottom: 2rem;
+    }
+    .closer .stream .dashboards{
+        text-align: center;
+    }
+    .closer .stream .dashboards img, .closer .stream .dashboards .dash-1{
+        position: inherit;
+        bottom: inherit;
+        top: inherit;
+        margin:  0 auto;
+        margin-top: 1rem;
+        right: inherit;
+    }
+    .closer .cards .card{
+        height: 100%;
+    }
+}
 .makes .box{
     border-radius: 3rem;
     padding: 3rem;
@@ -3263,6 +3419,12 @@ border-bottom-left-radius:2rem;
     border-radius: 3rem;
     animation: waveShake 3s ease-in-out infinite;
 }  
+@media only screen and (max-width:992px){
+    .mission .circle-pic{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
 
 .principles .box{
     background-color: #f4edf7;
@@ -3295,7 +3457,7 @@ border-bottom-left-radius:2rem;
 }
 
 @media only screen and (max-width:767px){
-    .about, .payment_easy, .product, .price, .customize, .culture, .history, .informed, .plan, .faq, .b2b{
+    .about, .payment_easy, .product, .price, .customize, .culture, .history, .informed, .plan, .faq, .b2b, .home-hero, .closer, .card-about, .mission, .exam-banner{
         overflow: hidden;
     }
 }

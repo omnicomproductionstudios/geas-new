@@ -35,7 +35,7 @@
 
         setTimeout(() => {
           loader.style.display = "none";
-          content.style.display = "grid";
+          // content.style.display = "grid";
         }, 600);
       });
     </script>
@@ -103,14 +103,18 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h2>Our pricing plans</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur bibendum fermentum<br />eget
-              adipiscing tellus ac eu condimentum eget ultricies lorem.
-            </p>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h2>Our pricing plans</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur bibendum fermentum eget
+                  adipiscing tellus ac eu condimentum eget ultricies lorem.
+                </p>
+              </div>
+            </div>
           </div>
           <div
-            class="d-flex align-items-start"
+            class="d-flex align-items-start big_tab"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
@@ -306,15 +310,19 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h2>Consistent Growth in Just a<br />Simple 3-Steps</h2>
-            <p>
-              We follow a structured, data-driven process to ensure your
-              marketing<br />strategy delivers consistent growth and measurable
-              results.
-            </p>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h2>Consistent Growth in Just a Simple 3-Steps</h2>
+                <p>
+                  We follow a structured, data-driven process to ensure your
+                  marketing strategy delivers consistent growth and measurable
+                  results.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
               <div class="box" data-aos="fade-up" data-aos-duration="1200">
                 <div class="num">1</div>
                 <h3>Onboarding Strategy</h3>
@@ -324,7 +332,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
               <div class="box" data-aos="fade-up" data-aos-duration="1400">
                 <div class="num">2</div>
                 <h3>Optimization Tracking</h3>
@@ -334,7 +342,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
               <div class="box" data-aos="fade-up" data-aos-duration="1600">
                 <div class="num">3</div>
                 <h3>Strategy Adjustments</h3>
@@ -347,15 +355,22 @@
           </div>
         </div>
       </section>
-      <section class="faq space no-bg">
+      <div class="questions space_sm">
         <div class="container">
-          <div class="title mb-5">
-            <div class="tag" data-aos="fade-up" data-aos-duration="800">
-              Frequently Asked Questions
+          <div
+            class="title text-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h2>Common questions</h2>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur bibendum fermentum eget
+                  adipiscing tellus ac eu condimentum eget ultricies lorem.
+                </p> -->
+              </div>
             </div>
-            <h2 data-aos="fade-up" data-aos-duration="1100">
-              Answers that help you understand<br />our services better
-            </h2>
           </div>
           <div
             class="accordion"
@@ -524,21 +539,21 @@
             </div>
             <!-- Item 7 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingSix">
+              <h2 class="accordion-header" id="headingSeven">
                 <button
                   class="accordion-button collapsed d-flex justify-content-between align-items-center"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix"
+                  data-bs-target="#collapseSeven"
                   aria-expanded="false"
-                  aria-controls="collapseSix"
+                  aria-controls="collapseSeven"
                 >
                   Can the AI platform be customized for my industry?
                   <span class="arrow"></span>
                 </button>
               </h2>
               <div
-                id="collapseSix"
+                id="collapseSeven"
                 class="accordion-collapse collapse"
                 data-bs-parent="#faqAccordion"
               >
@@ -550,21 +565,21 @@
             </div>
             <!-- Item 8 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingSix">
+              <h2 class="accordion-header" id="headingEight">
                 <button
                   class="accordion-button collapsed d-flex justify-content-between align-items-center"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix"
+                  data-bs-target="#collapseEight"
                   aria-expanded="false"
-                  aria-controls="collapseSix"
+                  aria-controls="collapseEight"
                 >
                   Do you offer support or training after implementation?
                   <span class="arrow"></span>
                 </button>
               </h2>
               <div
-                id="collapseSix"
+                id="collapseEight"
                 class="accordion-collapse collapse"
                 data-bs-parent="#faqAccordion"
               >
@@ -576,13 +591,13 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
         <img src="images/logo.png" class="f-logo" alt="" />
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-sm-6">
             <div class="intro">
               <p>
                 CARDAQ SINGAPORE PTE LTD is a company registered in
@@ -593,7 +608,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-sm-6">
             <div class="working">
               <div class="hours">
                 <h3>Working Hours</h3>
@@ -643,24 +658,24 @@
             </svg>
           </a>
         </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-lg-4">
+        <div class="row g-3">
+          <div class="col-sm-8">
+            <div class="row g-3">
+              <div class="col-sm-4">
                 <div class="links">
                   <a href="/">Cookies Policy</a>
                   <a href="/">Terms & Conditions</a>
                   <a href="/">Privacy Policy</a>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4">
                 <div class="links">
                   <a href="/">Chargeback Processing</a>
                   <a href="/">SAR</a>
                   <a href="/">Complaints Handling</a>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4">
                 <div class="links">
                   <a href="/">About & Contacts</a>
                   <a href="/">Merch Store</a>
@@ -668,7 +683,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-sm-4">
             <div class="small-logos mb-5">
               <svg class="logo1" viewBox="0 0 82 26">
                 <path
@@ -737,7 +752,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="text-end">
+              <div class="text-sm-end text-center">
                 <a href="/">Sign in as administrator</a>
               </div>
             </div>
@@ -752,7 +767,18 @@
     <script src="js/custom.js"></script>
     <script src="js/gsap.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "mobile",
+      });
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
     </script>
   </body>
 </html>
