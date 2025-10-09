@@ -61,6 +61,30 @@ body{
     background-color: #fefefe;
     overflow-x: hidden;
 }
+
+.alert{
+    width: 30rem;
+    z-index: 111;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.alert button{
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+#home{
+background: url('/images/patterns/dark-dotted.png') left top repeat;
+}
+#about{
+background: url('/images/patterns/grilled-noise.png') left top repeat;
+}
+#exam{
+background: url('/images/patterns/noisy-grid.png') left top repeat;
+}
+#contact{
+background: url('/images/patterns/wavecut.png') left top repeat;
+}
 .title h2{
     font-size: 4rem;
     font-weight: bold;
@@ -262,7 +286,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .about {
     position: relative;
-    padding: 18rem 0;
+    /* padding: 18rem 0; */
+    padding: 18rem 0 14rem;
     background:linear-gradient(180deg,#faf5ff,#fff3f3 77.67%,#fefefe) no-repeat bottom;
 }
 
@@ -663,8 +688,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .home_hero_left .rose{
     position: absolute;
-    top: 69px;
-    right: 171px;
+    top: 0px;
+    right: 0px;
     width: 133px;
 }
 .home_hero_left .boxes{
@@ -740,6 +765,13 @@ h1, h2, h3, h4, h5, h6{
 }
 .heroSwiper .swiper-slide .svgIcon{
     width: 5rem;
+}
+.heroSwiper .swiper-slide .bottom{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    left: 0px;
+    padding: 0 6%;
 }
 .heroSwiper .swiper-pagination {
   top: 2rem;
@@ -1048,7 +1080,10 @@ h1, h2, h3, h4, h5, h6{
     box-shadow: 0 0 22px 2px rgba(160, 68, 103, .15), 0 40px 32px -24px rgba(95, 92, 121, .22);
     padding: 3rem;
     max-width: 60rem;
-    /* margin-bottom: 7.5rem; */
+    margin-bottom: 7.5rem;
+}
+.price .card:last-child{
+    margin-bottom: 0px;
 }
 .price .card .leftPrice{
     border-right: #ccc solid 1px;
@@ -2561,85 +2596,78 @@ border-bottom-left-radius:2rem;
     max-width: 1180px;
 }
 .integration .box{
-    background-color: #a6b4d5;
+    background-color: #dfe8fd;
     border-radius: 2rem;
     padding: 2rem;
     height: 100%;
+    position: relative;
+    padding-left: 8rem;
 }
 .integration .box h3{
     color: #0b0922;
-    margin-top: 3rem;
-    font-weight: 700;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 .integration .box i{
-    background-color: #6d66e7;
-    border-radius: 50px;
+    position: absolute;
+    left: 2rem;
+    background-color: #fef7f8;
+    border-radius: 10px;
     height: 4.5rem;
     width: 4.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--color3);
     font-size: 2.5rem;
 }
 .integration .box p{
     color: #0b0922;
     margin-bottom: 0px;
     font-size: 1.3rem;
+    opacity: .8;
 }
 .integration .box ul{
     margin: 0px;
-    font-size: 1.5rem;
     padding-left: 1.5rem;
     margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    gap: 0.5rem 2rem; /* spacing between items */
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    opacity: .8;
 }
-.integration .box ul li{
-    margin-bottom: 1rem;
+@media (max-width: 768px) {
+  .integration .box ul {
+    grid-template-columns: 1fr;
+  }
 }
 .integration .box.two{
-    background-color: #ccb8e6;
-}
-.integration .box.two i{
-    background-color: #f0e28b;
-    color: var(--color3);
+    background-color: #f9e7ee;
 }
 .integration .box.three{
-    background-color: #d1ddb7;
-}
-.integration .box.three i{
-    background-color: #a6b4d5;
-    color: var(--color3);
+    background-color: #ede9fd;
 }
 .integration .box.four{
-    background-color: #0b0923;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.integration .box.four h3{
-    color: #fff;
-}
-.integration .box.four p{
-    color: #fff;
-}
-.integration .box.four i{
-    background-color: #cf79bd;
-    color: var(--color3);
+    background-color: #fdf6c9;
 }
 .integration .box.five{
-    background-color: #e6c2d7;
+    background-color: #121827;
+    color: #fff;
+}
+.integration .box.five h3, .integration .box.five p{
+    color: #fff;
 }
 .integration .box.five i{
-    background-color: #c3dacf;
-    color: var(--color3);
+    background-color: #2a303d;
+    color: #fff;
 }
 .integration .box.six{
-    background-color: #cfb8e5;
+    background-color: #ddfae6;
 }
-.integration .box.six i{
-    background-color: #6d66e7;
-    color: var(--color3);
+.integration .box.seven{
+    background-color: #dff5fe;
 }
 /* Exam Detail page */
 .introduction{
