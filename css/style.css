@@ -73,18 +73,6 @@ body{
     background-color: #fff;
     font-size: 1.5rem;
 }
-#home{
-background: url('/images/patterns/dark-dotted.png') left top repeat;
-}
-#about{
-background: url('/images/patterns/grilled-noise.png') left top repeat;
-}
-#exam{
-background: url('/images/patterns/noisy-grid.png') left top repeat;
-}
-#contact{
-background: url('/images/patterns/wavecut.png') left top repeat;
-}
 .title h2{
     font-size: 4rem;
     font-weight: bold;
