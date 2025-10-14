@@ -36,31 +36,6 @@ gsap.from([".product .left", ".slider2"], {
   },
 });
 
-gsap.from([".account .title > *"], {
-  duration: 1,
-  autoAlpha: 0,
-  y: 120,
-  ease: "power1.inOut",
-  scrollTrigger: {
-    trigger: ".account",
-    start: "top 50%",
-    end: "bottom 20%",
-    // markers: true,
-  },
-});
-gsap.from([".account .box"], {
-  duration: 1,
-  autoAlpha: 0,
-  y: 120,
-  stagger: 0.1,
-  ease: "power1.inOut",
-  scrollTrigger: {
-    trigger: ".account",
-    start: "top 50%",
-    end: "bottom 20%",
-    // markers: true,
-  },
-});
 
 // gsap.from([".price .title > *"], {
 //   duration: 1,
