@@ -354,16 +354,40 @@ const bar = document.querySelector(".process-progress-bar");
 const inner = document.querySelector(".process-progress-inner");
 
 // Calculate available distance
-const distance = bar.offsetHeight - inner.offsetHeight;
+// const distance = bar.offsetHeight - inner.offsetHeight;
 
-gsap.to(".process-progress-inner", {
-  y: distance,
-  ease: "none",
+// gsap.to(".process-progress-inner", {
+//   y: distance,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".process-widget-block",
+//     start: "top center",
+//     end: "bottom 30%",
+//     scrub: true,
+//   },
+// });
+
+
+const tl5 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".process-widget-block",
-    start: "top center",
-    end: "bottom 30%",
-    scrub: true,
-    // markers: true,
+    trigger: ".process",
+    start: "top 80%",
   },
 });
+
+const processIcon = document.querySelectorAll(".processIcon path");
+processIcon.forEach((el) => {
+  const length = el.getTotalLength();
+  gsap.set(el, {
+    strokeDasharray: length,
+    strokeDashoffset: length,
+    stroke: "#1f1f1f", 
+    fill: "none",      
+    autoAlpha: 1,
+  });
+});
+tl5.to(
+  processIcon,
+  {strokeDashoffset: 0, duration: 5, ease: "power1.inOut" },
+  "0"
+);

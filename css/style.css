@@ -91,6 +91,9 @@ body{
 .title-sm p{
     color: var(--color5);
 }
+.title-sm h2 span, .title h2 span{
+    color: var(--color2);
+}
 
 h1, h2, h3, h4, h5, h6{
     color: var(--color3);
@@ -179,6 +182,19 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-primary:hover i {
   right: -3px;
+}
+.btn:focus-visible {
+  background-color: var(--color1);
+  border-color: var(--color1);
+  color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(70, 97, 123, 0.35); /* optional custom shadow */
+  outline: none; /* remove default outline */
+}
+a:focus-visible {
+  color: var(--color1);
+  outline: 2px solid var(--color1); /* visible focus outline */
+  outline-offset: 2px; /* optional spacing */
+  text-decoration: underline;
 }
 .container{
     max-width: 1050px;
@@ -3262,4 +3278,167 @@ border-bottom-left-radius:2rem;
 }
 .protection .boxes .bottom3 img{
    border: #d7d0f4 solid 4px; 
+}
+
+/* process */
+.process{
+    background: url(/images/exam/pattern.webp) left top / cover no-repeat, linear-gradient(314deg, #fff 4.9%, var(--color6) 97.99%);
+}
+.process .title-sm{
+    position: sticky;
+    top: 8rem;
+}
+.process .title-sm svg{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+.process .title-sm svg path{
+    fill: none;
+    stroke: var(--color2);
+    stroke-width: 18px;
+}
+.process .title-sm h2{
+    margin-bottom: 0px;
+}
+.process .title-sm p{
+    color: var(--color3);
+    margin: 3rem 0;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+.process .box{
+    border: 0px;
+    border-radius: 1.15rem;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 5rem;
+    padding-top: 2rem;
+    max-width: 60rem;
+    margin-bottom: 5rem;
+    position: sticky;
+    top: 10rem;
+}
+.process .box:nth-child(2){
+    top: 18.5rem;
+}
+.process .box:nth-child(3){
+    top: 27rem;
+}
+.process .box:nth-child(4){
+    top: 35.5rem;
+}
+.process .box:nth-child(5){
+    top: 44rem;
+}
+.process .box:nth-child(6){
+    top: 70rem;
+}
+.process .box .heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+.process .box .heading h2{
+    font-weight: 600;
+}
+.process .box p{
+    margin-bottom: 0px;
+    color: var(--color1);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.process .box .heading .num{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color2);
+    color: #fff;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+    box-shadow: #f38ab299 0px 0px 4px 3px;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.transforming{
+    background-color: #f4edf7;
+    background-image: linear-gradient(90deg, var(--color1) 2%, var(--color5) 98%);
+    color: #fff;
+}
+.transforming .container{
+    max-width: 1230px;
+}
+.transforming .title-sm{
+    border-right: #fff5 solid 1px;
+    
+}
+.transforming .title-sm .tag{
+    padding-bottom: 2rem;
+    display: block;
+}
+.transforming .title-sm h2{
+  color: #fff;
+}
+.transforming .box {
+    position: relative;
+    padding: 3rem;
+    padding-left: 6.5rem;
+    height: 100%;
+}
+.transforming .box i{
+    position: absolute;
+    left: 2rem;
+    top: 2.5rem;
+    font-size: 3rem;
+    color: #fff8;
+}
+.transforming .box h2{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.transforming .box p{
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-wrap: balance;
+}
+
+
+/* creative */
+.creative .box .image{
+    background-color: #dff5fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.creative .box .image.two{
+    background-color: #ede9fd;
+}
+.creative .box{
+    margin-top: 3rem;
+    border: var(--color5) solid 1px;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.creative .box .copy{
+    padding: 3rem 2rem 3rem 0;
+}
+.creative .box h2{
+    font-size: 2.5rem;
+}
+.creative .box p{
+    margin: 4rem 0;
+    color: #0008;
+}
+.creative .box .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
 }
