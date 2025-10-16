@@ -801,7 +801,7 @@ a:focus-visible {
 }
 
 .slider2 .swiper-wrapper{
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
 }
 .slider2 .copy{
     padding: 2.5rem;
@@ -819,7 +819,7 @@ a:focus-visible {
 .slider2 .swiper-slide{
     background-color: #fbf6f6;
     border-radius: 1.5rem;
-    box-shadow: 0 40px 32px -24px rgba(95,92,121,.22);
+    /* box-shadow: 0 40px 32px -24px rgba(95,92,121,.22); */
 }
 .slider2 .svgIcon{
     height: 30rem;
