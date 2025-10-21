@@ -1483,6 +1483,12 @@ a:focus-visible {
     border-radius: 20px;
     padding: 3rem;
 }
+.plan .title-sm h2{
+    color: #fff;
+}
+.plan .standard {
+    padding: 2rem 0;
+}
 .plan .standard .name{
     display: flex;
     flex-wrap: wrap;
@@ -1581,12 +1587,17 @@ a:focus-visible {
 .testi .info .user{
     width: 7rem;
 }
+.testi .info .rating{
+    display: flex;
+    color: #ffb320;
+}
 .testi .info .name{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
 }
+
 .testi .info .name h3{
     font-size: 1.8rem;
 }
@@ -1594,6 +1605,9 @@ a:focus-visible {
     color: var(--color1);
     font-weight: 400;
     font-size: 1.5rem;
+}
+.testi .info .name h3 small{
+    font-size: 1.3rem;
 }
 .testi .content{
     padding-top: 3rem;
@@ -1787,12 +1801,6 @@ border-bottom-left-radius:2rem;
     justify-content: center;
     border-radius: 50px;
     font-weight: 700;
-}
-.pricing_plan .bottom{
-    display: flex;
-    gap: 7rem;
-    align-items: flex-end;
-    flex-wrap: wrap;
 }
 .pricing_plan .bottom .pic img{
     max-width: 30rem;
@@ -2679,7 +2687,7 @@ border-bottom-left-radius:2rem;
     }
 }
 .informed h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--color3);
     margin-bottom: 4rem;
@@ -2687,7 +2695,6 @@ border-bottom-left-radius:2rem;
 .informed p{
     color: var(--color3);
     margin-bottom: 4rem;
-    margin-top: 1rem;
 }
 .informed ul{
     list-style: none;
@@ -2696,7 +2703,7 @@ border-bottom-left-radius:2rem;
 }
 .informed ul li{
     font-weight: 600;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     border-top: var(--color6) solid 1px;
     padding-left: 2.5rem;
     position: relative;
