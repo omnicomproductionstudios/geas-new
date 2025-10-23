@@ -56,7 +56,7 @@ body{
     line-height: 1;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.3;
     background-color: #fefefe;
     overflow-x: hidden;
@@ -83,7 +83,7 @@ body{
 }
 
 .title-sm h2{
-    font-size: 3.7rem;
+    font-size: 2.9rem;
     font-weight: 700;
     color: var(--color3);
     /* margin-bottom: 2rem; */
@@ -299,18 +299,19 @@ a:focus-visible {
     font-size: 4rem;
     font-weight: bold;
     color: var(--color3);
-    padding: 2.5rem 0;
-    text-align: balance;
+    padding: 1rem 0 2rem;
 }
 .about .content p{
-    font-size: 1.6rem;
-    font-weight: 450;
-    color: var(--color4);
-    color: #7a8c9f;
-    padding-right: 30%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color5);
+    padding-right: 10%;
     padding-bottom: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.32px;
+}
+.about .content p:first-child{
+    padding-bottom: 1rem;
 }
 .about-arrow{
     top: 0rem;
@@ -358,8 +359,8 @@ a:focus-visible {
 }
 .about .copy1 p{
     color: var(--color3);
-    font-weight: normal;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 .about .box2{
     position: absolute;
@@ -396,8 +397,8 @@ a:focus-visible {
 }
 .about .copy2 p{
     color: var(--color3);
-    font-weight: normal;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 .about .copy2 svg{
     position: absolute;
@@ -758,6 +759,7 @@ a:focus-visible {
 }
 .custom-pagination .tab-label{
     font-weight: 700;
+    text-transform: uppercase;
 }
 .custom-pagination .arrow{
     width: 1.7rem;
@@ -1489,6 +1491,9 @@ a:focus-visible {
 .plan .standard {
     padding: 2rem 0;
 }
+.plan .standard.inside {
+    padding:0;
+}
 .plan .standard .name{
     display: flex;
     flex-wrap: wrap;
@@ -1523,7 +1528,7 @@ a:focus-visible {
     padding-bottom: 2rem;
 }
 .plan .standard .price_tag span{
-    color: #aeb9e1;
+    color: var(--color1);
     font-size: 1.5rem;
 }
 .standard_list{
@@ -2142,18 +2147,16 @@ border-bottom-left-radius:2rem;
     /* background-image: linear-gradient(240deg, #f0e2f8, #dbb5ec 25%, #fcf2f2 50%, #fefbfb 75%, #f0e2f8 103%); */
     padding: 3rem;
     border-radius: 2rem; 
+    padding-bottom: 3rem;
 }
 .customize1 .cover{
     border-radius: 2rem;
     width: 100%;
+    height: 100%;
 }
-.customize1 .copy h2{
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.customize1 .copy p{
-    color: var(--color5);
-    font-size: 1.4rem;
+.customize1 .title-sm p{
+    color: var(--color1);
+    font-size: 1.3rem;
     margin-bottom: 3rem;
 }
 .customize1 .box{
@@ -2164,15 +2167,16 @@ border-bottom-left-radius:2rem;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
 }
 .customize1 .box h3{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0px;
 }
 .customize1 .box p{
     margin: 0px;
-    margin-top:1rem;
+    margin-top: 1rem;
     color: var(--color1);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 .customize1 .box.one{
     background-color: #f9e7ee;
@@ -2190,7 +2194,7 @@ border-bottom-left-radius:2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -5rem;
+    margin-top: 2rem;
 }
 .customize-menu .arrows{
     display: flex;
@@ -2221,9 +2225,9 @@ border-bottom-left-radius:2rem;
     background-color: #ccc;
     border-radius: 1rem;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6.5rem;
+    height: 100%;
+    padding-bottom: 13rem;
+    position: relative;
 }
 .statics .box .header{
     display: flex;
@@ -2244,7 +2248,14 @@ border-bottom-left-radius:2rem;
 }
 .statics .box p{
     margin-top: 0px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 2rem;
+    width: 100%;
+    padding: 0 2rem;
 }
 .statics .box.one{
     background-color: #d5f1ff;
@@ -2848,6 +2859,7 @@ border-bottom-left-radius:2rem;
 }
 .b2b .link-box h3{
     color: var(--color3);
+    font-size: 1.5rem;
 }
 .b2b .link-box p{
     color: var(--color1);
@@ -2860,10 +2872,6 @@ border-bottom-left-radius:2rem;
     display: flex;
     flex-direction: column;
 }
-.history p{
-    opacity: .8;
-    margin-bottom: 4rem;
-}
 
 .history .title-sm .tag{
     margin-bottom: 1rem;
@@ -2871,6 +2879,9 @@ border-bottom-left-radius:2rem;
 }
 .history .title-sm h2 span{
     color: var(--color2);
+}
+.history .title-sm p{
+    color: var(--color1);
 }
 .history img{
     border-radius: 2rem;
@@ -2888,13 +2899,14 @@ border-bottom-left-radius:2rem;
     margin-top: auto;
 }
 .history ul li{
-    padding: 2.5rem 0;
+    font-weight: 600;
+    padding: 2rem 0;
     border-top: var(--color6) solid 1px;
     padding-left: 2.5rem;
     position: relative;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    font-size: 1.3rem;
 }
 .history ul li strong{
     margin-right: 5px;

@@ -59,12 +59,12 @@ var slider2 = new Swiper(".slider2", {
     clickable: true,
     renderBullet: function (index, className) {
       const labels = [
-        "UNIQUE CUSTOMER JOURNEY",
-        "PREMIUM ACCOUNTS",
-        "COMPANY IS LICENSED IN SINGAPORE",
-        "UNIQUE CUSTOMER JOURNEY",
-        "PREMIUM ACCOUNTS",
-        "COMPANY IS LICENSED IN SINGAPORE",
+        "CEFR-aligned results",
+        "Real-world assessment",
+        "Integrity by design",
+        "Fair, consistent scoring",
+        "Fast, verifiable certification",
+        "Global access",
       ];
       const number = (index + 1).toString().padStart(2, "0");
 
