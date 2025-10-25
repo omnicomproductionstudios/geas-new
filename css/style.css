@@ -1229,6 +1229,25 @@ a:focus-visible {
 }
 .process-widget-body h3{
     font-size: 2.5rem;
+    font-weight: 700;
+}
+.process-widget-body p, .process-widget-body ul{
+    margin-bottom: 0px;
+}
+.process-widget-body p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color1);
+    line-height: 1.5;
+}
+.process-widget-body ul {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color1);
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
 }
 .progress-widget-right {
     margin-top: 49px;
