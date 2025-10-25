@@ -1699,7 +1699,7 @@ border-bottom-left-radius:2rem;
         /* background: linear-gradient(180deg, #faf5ff, #fff3f3 77.67%, #fefefe) no-repeat bottom; */
 }
 .pricing_plan .container{
-    max-width: 1230px;
+    max-width: 1180px;
 }
 .pricing_plan .nav-link{
     padding: 3rem 3rem;
@@ -2134,6 +2134,7 @@ border-bottom-left-radius:2rem;
     padding: 3rem;
     border-radius: 2rem; 
     padding-bottom: 3rem;
+    max-width: 1180px;
 }
 .customize1 .cover{
     border-radius: 2rem;
@@ -2300,9 +2301,9 @@ border-bottom-left-radius:2rem;
     margin: 4rem 0;
     color: #fff;
 }
-.integration .container{
+/* .integration .container{
     max-width: 1180px;
-}
+} */
 .integration .box{
     background-color: #dfe8fd;
     border-radius: 2rem;
