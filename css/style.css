@@ -1046,15 +1046,15 @@ a:focus-visible {
 .exam-banner .container {
     max-width: 1230px;
 }
-.exam-banner .title .tag{
+.exam-banner .title-sm .tag{
     margin-bottom: 2rem;
 }
-.exam-banner .title h2{
+.exam-banner .title-sm h2{
     font-size: 4rem;
     font-weight: bold;
     color: var(--color3);
 }
-.exam-banner .title p{
+.exam-banner .title-sm p{
     padding: 2.5rem 0;
 }
 .exam-banner .dashboard{
