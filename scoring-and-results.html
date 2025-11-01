@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEAS &#8211; Global English Aptitude Solutions (GEAS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        // Fade out loader
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          // content.style.display = "grid";
+        }, 600);
+      });
+    </script>
+  </head>
+  <body id="">
+    <div id="loader">
+      <div class="spinner"></div>
+      <!-- <p>Loading...</p> -->
+    </div>
+    <header class="site_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" width="130px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html">The Exam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"
+                  >Understanding The Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="/" class="btn btn-primary"
+                >Book Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="introduction">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="title">
+                <div class="tag" data-aos="fade-up" data-aos-duration="800">
+                  The Exam
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Scoring & Results
+                </h2>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="1200">
+                Fair, consistent, and defensible outcomes. Writing and Speaking
+                are human‑scored with calibrated rubrics, supported by analytic
+                checks. Results map to CEFR (A1–C2) and are delivered within 14
+                calendar days.
+              </p>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3"
+                >How scoring works</a
+              >
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary white btn-lg"
+                >Scoring principles</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="glance" data-aos="fade-up" data-aos-duration="1500">
+                <h3>At glance</h3>
+                <ul>
+                  <li>Reporting: CEFR A1–C2</li>
+                  <li>Delivery: digital certificate</li>
+                  <li>Turnaround: 14 calendar days</li>
+                  <li>Verification: shareable link & ID</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Book Your Exam</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what_exam">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Purpose</span>
+                <h2>What scoring delivers</h2>
+                <p>
+                  Our scoring model blends calibrated human judgment with
+                  analytic checks to ensure stable, comparable results across
+                  cohorts and time. Each decision is anchored to CEFR
+                  descriptors so institutions can interpret outcomes at a
+                  glance.
+                </p>
+                <ul class="points">
+                  <li>
+                    <strong>Evidence‑based</strong> — judgments tied to
+                    observable features in responses.
+                  </li>
+                  <li>
+                    <strong>Portable</strong> — CEFR mapping makes results easy
+                    to use across contexts.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="copy right"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Scope</span>
+                <h2>Where it’s used</h2>
+                <ul>
+                  <li>Admissions and placement</li>
+                  <li>Hiring and promotion</li>
+                  <li>Licensing and compliance</li>
+                  <li>Personal and global mobility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how_works alignment">
+        <div class="container">
+          <h2>How scoring works</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <ul>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Collection & preprocessing </strong>
+                  Responses are captured securely; audio is normalised and text
+                  is prepared for rater review.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Primary scoring </strong>
+                  Trained evaluators apply calibrated rubrics to Writing and
+                  Speaking; Reading/Listening are keyed and quality‑checked.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Analytic checks </strong>
+                  Models flag anomalies (e.g., duplication, ultra‑fast
+                  submissions) for secondary inspection.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Second marking (as needed) </strong>
+                  Borderline or flagged cases receive senior review or
+                  double‑blind resolution.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Aggregation & CEFR mapping </strong>
+                  Evidence across tasks converges to an overall CEFR outcome
+                  (A1–C2).
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Release & verification </strong>
+                  Results issued within 14 calendar days with a shareable
+                  certificate and verification ID.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background-color: #fcf8fc">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Principles</span>
+              <h2>Scoring principles</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-scale inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="199:78-199:118"
+                    data-source-name="Scale"
+                  >
+                    <path
+                      d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"
+                    ></path>
+                    <path
+                      d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"
+                    ></path>
+                    <path d="M7 21h10"></path>
+                    <path d="M12 3v18"></path>
+                    <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                  </svg>
+                  Fairness
+                </h3>
+                <p>
+                  Bias controls, anonymised scripts, and accessibility
+                  accommodations protect candidate equity.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clipboard-list inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="204:78-204:126"
+                    data-source-name="ClipboardList"
+                  >
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                    <path
+                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                    ></path>
+                    <path d="M12 11h4"></path>
+                    <path d="M12 16h4"></path>
+                    <path d="M8 11h.01"></path>
+                    <path d="M8 16h.01"></path>
+                  </svg>
+                  Rubric fidelity
+                </h3>
+                <p>
+                  Rater training, standardisation sets, and drift monitoring
+                  maintain rubric alignment.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-gauge inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="209:78-209:118"
+                    data-source-name="Gauge"
+                  >
+                    <path d="m12 14 4-4"></path>
+                    <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                  </svg>
+                  Reliability
+                </h3>
+                <p>
+                  Anchor items, inter‑rater checks, and statistical surveillance
+                  keep results stable over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Assurance</span>
+                <h2>Consistency & quality control</h2>
+                <ul class="points">
+                  <li>
+                    <strong>Standardisation</strong> — periodic calibration
+                    using gold‑set responses and consensus scoring.
+                  </li>
+                  <li>
+                    <strong>Monitoring</strong> — live rater drift checks,
+                    agreement thresholds, and automatic sampling.
+                  </li>
+                  <li>
+                    <strong>Escalation</strong> — second marking for borderline
+                    or flagged cases; senior adjudication where needed.
+                  </li>
+                  <li>
+                    <strong>Transparency</strong> — clear reporting, certificate
+                    details, and verification pathways for institutions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Delivery </span>
+                <h3>What you receive</h3>
+                <ul>
+                  <li>Digital certificate stating CEFR level</li>
+                  <li>Unique verification ID and share link</li>
+                  <li>Issue date and validity (2 years)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2>Explore next</h2>
+              <p>Go deeper into policy and delivery.</p>
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Format</span>
+                <h3>Format & Timing</h3>
+                <p class="mb-5">Sections, task types, and time guidance.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Read policies <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Security</span>
+                <h3>Delivery & Security</h3>
+                <p class="mb-5">
+                  Identity checks, environment scan, and monitoring.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Certificates</span>
+                <h3>Certificates & Verification</h3>
+                <p class="mb-5">
+                  What appears on your certificate and how to share it.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_faq">
+        <div class="container">
+          <h2 class="title">Quick answers</h2>
+
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  How are scores reported?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  As an overall CEFR level (A1–C2). Where relevant, brief skill
+                  insight may be included for context.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Who marks Writing and Speaking?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Calibrated human evaluators supported by analytic checks. Dual
+                  review is used for edge cases.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Is AI used to score?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Analytic models support consistency and flag anomalies; final
+                  judgments follow calibrated rubrics.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  When will I get my results?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Within 14 calendar days of completion. You'll receive a
+                  digital certificate and verification link.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Can I request a re‑evaluation?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Submit a request within 5 days of results. Additional
+                  review is performed by a senior rater.
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Are scores comparable across sessions?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. We use anchor items, rater calibration, and statistical
+                  monitoring to maintain equivalence.
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  Do you provide raw scores?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We report CEFR outcomes rather than raw points. Institutions
+                  can request technical notes where available.
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  What if responses trigger integrity flags?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Results may be paused for review. We may request identity
+                  reconfirmation or a supervised retake.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  How long are results valid?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Certificates are valid for 2 years from the issue date.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  How do institutions verify results?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Use the /verify portal with your Certificate ID, or contact
+                  verify@proficia.org for bulk checks.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_book">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+              <h2>Know your level. Share it confidently.</h2>
+              <p>
+                Book in minutes and receive a verifiable CEFR result within 14
+                calendar days.
+              </p>
+            </div>
+            <div class="col-lg-7 text-md-end">
+              <a href="/" class="btn btn-primary btn-lg me-3">Book Your Exam</a>
+              <a href="/" class="btn btn-primary white btn-lg">
+                Verify a Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nextjs-footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Next.js Conf</a></li>
+              <li><a href="#">Previews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Releases</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Vercel</h3>
+            <ul>
+              <li><a href="#">Next.js + Vercel</a></li>
+              <li><a href="#">Open Source Software</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="images/logo.svg" width="130px" alt="" />
+          </div>
+
+          <div class="footer-legal">
+            Copyright © 2025 Vercel, Inc. All rights reserved.
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

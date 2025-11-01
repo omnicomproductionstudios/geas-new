@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEAS &#8211; Global English Aptitude Solutions (GEAS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        // Fade out loader
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          // content.style.display = "grid";
+        }, 600);
+      });
+    </script>
+  </head>
+  <body id="">
+    <div id="loader">
+      <div class="spinner"></div>
+      <!-- <p>Loading...</p> -->
+    </div>
+    <header class="site_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" width="130px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html">The Exam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"
+                  >Understanding The Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="/" class="btn btn-primary"
+                >Book Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="introduction">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="title">
+                <div class="tag" data-aos="fade-up" data-aos-duration="800">
+                  The Exam
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Eligibility & ID Requirements
+                </h2>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="1200">
+                Check eligibility and prepare the correct identity documents to
+                ensure a smooth, secure test day. Your booking name must match
+                your ID exactly.
+              </p>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3"
+                >Who can take the exam</a
+              >
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary white btn-lg"
+                >Accepted ID</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="glance" data-aos="fade-up" data-aos-duration="1500">
+                <h3>At glance</h3>
+                <ul>
+                  <li>Minimum age: 16+ (under 16 by request)</li>
+                  <li>ID name must match booking</li>
+                  <li>Valid, government‑issued photo ID</li>
+                  <li>Webcam + microphone required</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Start Booking</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what_exam">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Purpose</span>
+                <h2>Why requirements matter</h2>
+                <p>
+                  Clear eligibility and ID rules protect fairness for every
+                  candidate and ensure results can be trusted by universities
+                  and employers worldwide.
+                </p>
+                <ul class="points">
+                  <li>
+                    <strong>Integrity</strong> — verified identity and presence
+                    throughout the exam session.
+                  </li>
+                  <li>
+                    <strong>Portability</strong> — documentation that
+                    decision‑makers can accept without additional checks.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="copy right"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Scope</span>
+                <h2>Where it applies</h2>
+                <ul>
+                  <li>All test locations worldwide</li>
+                  <li>All delivery modes (remote proctoring)</li>
+                  <li>All candidates and retakes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+            <span class="sm-tag">Verification</span>
+            <h2>Name matching & capture</h2>
+
+            <div class="row g-3">
+              <div class="col-md-8">
+                <ul class="points">
+                  <li>
+                    Your booking name must match your ID exactly (including
+                    middle names and diacritics, where applicable)
+                  </li>
+                  <li>
+                    On test day, show the physical ID to the camera when
+                    prompted by the proctor.
+                  </li>
+                  <li>
+                    We capture a live photo and short video for presence
+                    verification and audit.
+                  </li>
+                  <li>
+                    Name change? Provide official proof (e.g., marriage
+                    certificate, court order) before test day.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <span class="sm-tag">Security</span>
+                  <h3><i class="bi bi-camera"></i> Live checks</h3>
+                  <p>
+                    Lighting should clearly show your face and the ID. Do not
+                    use filters or screen‑sharing tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background-color: #fcf8fc">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Checklist</span>
+              <h2>Before you book</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Valid ID ready
+                </h3>
+                <p>
+                  Have a passport, national ID, or driver’s license that matches
+                  your name exactly.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Quiet room
+                </h3>
+                <p>
+                  Private space with adequate lighting and no background voices.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Device & browser
+                </h3>
+                <p>
+                  Laptop/desktop with webcam and mic; use a modern browser with
+                  updates installed.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Connection
+                </h3>
+                <p>
+                  Stable internet; we recommend a wired or strong Wi‑Fi
+                  connection.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Policies
+                </h3>
+                <p>
+                  Review Candidate Terms, Privacy Policy, and Exam Rules; agree
+                  during checkout.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-check-corner inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="247:80-247:125"
+                    data-source-name="FileCheck2"
+                  >
+                    <path
+                      d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="m14 20 2 2 4-4"></path>
+                  </svg>
+                  Time window
+                </h3>
+                <p>
+                  Allow ~120 minutes uninterrupted for setup and the exam
+                  itself.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Special cases </span>
+              <h2>Additional guidance</h2>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <h3>Minors (under 16)</h3>
+                <p>
+                  Testing is possible by request with guardian consent and
+                  approved identification. Contact support before booking.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <h3>Name changes</h3>
+                <p>
+                  If your legal name recently changed, submit official proof at
+                  least 48 hours before your slot for update approval.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <h3>Unsupported documents</h3>
+                <p>
+                  Use wired headphones and adjust volume levels. Captions are
+                  available for instructions where appropriate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2>Explore next</h2>
+              <p>Go deeper into policy and delivery.</p>
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Format</span>
+                <h3>Format & Timing</h3>
+                <p class="mb-5">Sections, task types, and time guidance.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Read policies <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Security</span>
+                <h3>Delivery & Security</h3>
+                <p class="mb-5">
+                  Identity checks, environment scan, and monitoring.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Booking</span>
+                <h3>Book your exam</h3>
+                <p class="mb-5">Choose a slot and upload details securely.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Go to booking <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_faq">
+        <div class="container">
+          <h2 class="title">Quick answers</h2>
+
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Who is eligible to take the exam?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Anyone aged 16+ with a valid government ID. Younger candidates
+                  may test with guardian consent and approved ID.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What IDs are accepted?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Passport (preferred), national ID card, or driver’s license
+                  with photo, full name, and DOB. The document must be valid on
+                  test day.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I use a student card?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. School or employer cards are not accepted. Use a
+                  government‑issued identity document.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  My ID name doesn’t match my booking—what now?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Update your booking to match your ID exactly, or submit
+                  documentation for a supported name change before test day.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Is an expired ID allowed?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Expired IDs are not accepted. Renew or provide a different
+                  valid document.
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Do I need a webcam?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. A functioning camera and microphone are required for
+                  identity verification and monitoring.
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  Is a printed copy of my ID required?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Present the physical ID to the camera when the proctor
+                  requests it; do not use photocopies or photos of an ID.
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  How is my data handled?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We capture only what is needed for verification and store it
+                  securely under our Privacy Policy.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  Can I take the exam outside my country of citizenship?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Your location does not need to match your citizenship as
+                  long as your ID is valid.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  What if I can’t meet the ID requirements?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Contact support before booking. In limited cases, alternative
+                  verification may be available.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_book">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <h2>Ready to book?</h2>
+              <p>
+                Confirm your ID meets the requirements, then choose a slot in
+                minutes.
+              </p>
+            </div>
+            <div class="col-lg-5 text-md-end">
+              <a href="/" class="btn btn-primary btn-lg me-3">Book Your Exam</a>
+              <a href="/" class="btn btn-primary white btn-lg">
+                Contact Support</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nextjs-footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Next.js Conf</a></li>
+              <li><a href="#">Previews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Releases</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Vercel</h3>
+            <ul>
+              <li><a href="#">Next.js + Vercel</a></li>
+              <li><a href="#">Open Source Software</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="images/logo.svg" width="130px" alt="" />
+          </div>
+
+          <div class="footer-legal">
+            Copyright © 2025 Vercel, Inc. All rights reserved.
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
