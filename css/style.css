@@ -2479,6 +2479,10 @@ border-bottom-left-radius:2rem;
     background: linear-gradient(#ffffffa6, #ffffffa6);
     padding: 6rem 0;
 }
+.what_exam .num{
+    font-weight: 700;
+    color: var(--color2);
+}
 .sm-tag{
     background-color: #ffe1eb;
     display: inline-block;
