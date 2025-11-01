@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEAS &#8211; Global English Aptitude Solutions (GEAS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        // Fade out loader
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          // content.style.display = "grid";
+        }, 600);
+      });
+    </script>
+  </head>
+  <body id="">
+    <div id="loader">
+      <div class="spinner"></div>
+      <!-- <p>Loading...</p> -->
+    </div>
+    <header class="site_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" width="130px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html">The Exam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"
+                  >Understanding The Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="/" class="btn btn-primary"
+                >Book Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="introduction">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="title">
+                <div class="tag" data-aos="fade-up" data-aos-duration="800">
+                  The Exam
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  System Requirements & Environment
+                </h2>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="1200">
+                Use a compatible device, modern browser, and a quiet private
+                room. Complete a quick system check before test day to avoid
+                delays.
+              </p>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3"
+                >Minimum specs</a
+              >
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary white btn-lg"
+                >Environment</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="glance" data-aos="fade-up" data-aos-duration="1500">
+                <h3>At glance</h3>
+                <ul>
+                  <li>Device: laptop/desktop only</li>
+                  <li>Browser: latest Chrome/Edge/Safari</li>
+                  <li>Network: stable, 10↓/5↑ Mbps</li>
+                  <li>Room: private, quiet, well‑lit</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Run pre‑test check</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what_exam">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Purpose</span>
+                <h2>Why requirements matter</h2>
+                <p>
+                  A compatible setup prevents audio/video issues and ensures
+                  fair monitoring. Completing the pre‑test check reduces delays
+                  on exam day.
+                </p>
+                <ul class="points">
+                  <li>
+                    <strong>Reliability</strong> — stable performance during
+                    Speaking and Listening tasks.
+                  </li>
+                  <li>
+                    <strong>Integrity</strong> — uninterrupted proctoring and
+                    identity checks.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="copy right"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Scope</span>
+                <h2>Applies to every candidate</h2>
+                <ul>
+                  <li>All regions and time zones</li>
+                  <li>All sessions and retakes</li>
+                  <li>Remote delivery with live monitoring</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background: #f9ecf4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Minimum specs </span>
+              <h2>Device, browser & network</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-monitor-smartphone inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="181:78-181:130"
+                    data-source-name="MonitorSmartphone"
+                  >
+                    <path
+                      d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"
+                    ></path>
+                    <path d="M10 19v-3.96 3.15"></path>
+                    <path d="M7 19h5"></path>
+                    <rect width="6" height="10" x="16" y="12" rx="2"></rect>
+                  </svg>
+                  Device
+                </h3>
+                <p>
+                  Laptop/desktop running Windows 10+, macOS 12+, or Linux
+                  (modern distro). One monitor only.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-settings inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="186:78-186:121"
+                    data-source-name="Settings"
+                  >
+                    <path
+                      d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                    ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  Browser
+                </h3>
+                <p>
+                  Latest Chrome, Edge, or Safari. Allow camera, microphone, and
+                  clipboard permissions when prompted.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wifi inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="191:78-191:117"
+                    data-source-name="Wifi"
+                  >
+                    <path d="M12 20h.01"></path>
+                    <path d="M2 8.82a15 15 0 0 1 20 0"></path>
+                    <path d="M5 12.859a10 10 0 0 1 14 0"></path>
+                    <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+                  </svg>
+                  Network
+                </h3>
+                <p>
+                  Stable connection with at least 10 Mbps download / 5 Mbps
+                  upload. Avoid VPNs and heavy streaming during the session.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-webcam inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="198:78-198:119"
+                    data-source-name="Webcam"
+                  >
+                    <circle cx="12" cy="10" r="8"></circle>
+                    <circle cx="12" cy="10" r="3"></circle>
+                    <path d="M7 22h10"></path>
+                    <path d="M12 22v-4"></path>
+                  </svg>
+                  Camera
+                </h3>
+                <p>
+                  1080p or HD webcam positioned eye‑level. Ensure good lighting
+                  with your face clearly visible.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mic inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="203:78-203:116"
+                    data-source-name="Mic"
+                  >
+                    <path d="M12 19v3"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <rect x="9" y="2" width="6" height="13" rx="3"></rect>
+                  </svg>
+                  Audio
+                </h3>
+                <p>
+                  Built‑in or external mic; wired headphones recommended. Test
+                  for echo and background noise.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-plug-zap inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="208:78-208:120"
+                    data-source-name="PlugZap"
+                  >
+                    <path
+                      d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"
+                    ></path>
+                    <path d="m2 22 3-3"></path>
+                    <path d="M7.5 13.5 10 11"></path>
+                    <path d="M10.5 16.5 13 14"></path>
+                    <path d="m18 3-4 4h6l-4 4"></path>
+                  </svg>
+                  Power
+                </h3>
+                <p>
+                  Plug in your device or ensure >50% battery. Close power‑saving
+                  apps that may throttle performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam">
+        <div class="container">
+          <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+            <span class="sm-tag">Environment</span>
+            <h2>Room & environment checklist</h2>
+
+            <div class="row g-3 align-items-center">
+              <div class="col-lg-7">
+                <ul class="points">
+                  <li>Use a private, quiet room with a desk and chair.</li>
+                  <li>
+                    Place your camera at eye level; ensure your face is well
+                    lit.
+                  </li>
+                  <li>
+                    Remove notes, books, and secondary devices from the desk.
+                  </li>
+                  <li>Disconnect additional monitors and accessories.</li>
+                  <li>
+                    Close messaging, conferencing, and screen‑sharing apps.
+                  </li>
+                  <li>
+                    Keep your phone out of reach unless instructed by support.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <span class="sm-tag">Proctor tips </span>
+                  <h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-shield-check inline h-4 w-4 mr-2"
+                      aria-hidden="true"
+                      data-source-pos="231:78-231:124"
+                      data-source-name="ShieldCheck"
+                    >
+                      <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                      ></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    Pass checks quickly
+                  </h3>
+                  <p>
+                    Have your ID ready, pan the camera when asked, and keep
+                    within frame. Follow proctor instructions immediately.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how_works alignment">
+        <div class="container">
+          <h2>Run the pre‑test system check</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <ul>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Permissions </strong>
+                  Open the checker and allow camera, microphone, and screen
+                  permissions.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Network </strong>
+                  Verify latency and bandwidth; switch to a stronger network if
+                  needed.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Audio & video </strong>
+                  Record a 5‑second clip to confirm clarity and volume levels.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Environment</strong>
+                  Confirm lighting and background; remove distractions before
+                  test time.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Finalize </strong>
+                  Close background apps, plug in power, and keep your ID ready.
+                </li>
+              </ul>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3 aos-init"
+                >Open system checker</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Help </span>
+              <h2>Troubleshooting</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-triangle-alert inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="265:78-265:126"
+                    data-source-name="AlertTriangle"
+                  >
+                    <path
+                      d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                    ></path>
+                    <path d="M12 9v4"></path>
+                    <path d="M12 17h.01"></path>
+                  </svg>
+                  Camera blocked
+                </h3>
+                <p>
+                  Enable permissions in browser settings; restart the tab; quit
+                  apps using the camera (Zoom, Teams).
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-triangle-alert inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="270:78-270:126"
+                    data-source-name="AlertTriangle"
+                  >
+                    <path
+                      d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                    ></path>
+                    <path d="M12 9v4"></path>
+                    <path d="M12 17h.01"></path>
+                  </svg>
+                  Mic not detected
+                </h3>
+                <p>
+                  Select the correct input device; disable noise‑cancelling
+                  apps; test in the system checker.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-triangle-alert inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="275:78-275:126"
+                    data-source-name="AlertTriangle"
+                  >
+                    <path
+                      d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                    ></path>
+                    <path d="M12 9v4"></path>
+                    <path d="M12 17h.01"></path>
+                  </svg>
+                  Network unstable
+                </h3>
+                <p>
+                  Move closer to the router, switch to wired, or pause
+                  downloads/streaming on other devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2>Explore next</h2>
+              <p>Go deeper into policy and delivery.</p>
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Format</span>
+                <h3>Format & Timing</h3>
+                <p class="mb-5">Sections, task types, and time guidance.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">CEFR</span>
+                <h3>CEFR Alignment</h3>
+                <p class="mb-5">How we map results from A1 to C2.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Verification </span>
+                <h3>Certificates & Verification</h3>
+                <p class="mb-5">
+                  What appears on your certificate and how to share it.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_faq">
+        <div class="container">
+          <h2 class="title">Quick answers</h2>
+
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Can I use a phone or tablet?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Use a laptop or desktop with a webcam and microphone.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Do I need to install software?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No separate install. Use a modern browser; you may grant
+                  camera/mic permissions and run a quick system check.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Minimum internet speed?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We recommend 5 Mbps up/10 Mbps down. A stable connection
+                  matters more than peak speed.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Headphones allowed?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Wired headphones are recommended; avoid Bluetooth if it
+                  disconnects easily.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Can I use a work laptop?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Possibly. Ensure firewalls or VPNs don’t block camera/mic or
+                  proctoring traffic.
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  What if my Wi‑Fi drops?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  The session attempts to reconnect. If it fails, follow the
+                  on‑screen recovery or contact support immediately.
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  Can I test in a public place?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Use a private, quiet room with no other people present.
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  Are multiple monitors allowed?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Disconnect extra displays; use a single screen only.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  What browser should I use?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Latest Chrome, Edge, or Safari. Enable camera, microphone, and
+                  clipboard permissions when prompted.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  Do I need admin rights?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Not typically, but you must be able to change browser
+                  permissions and close background apps.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_book">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+              <h2>Ready for test day?</h2>
+              <p>
+                Run the system check and secure a quiet room—then book your
+                slot.
+              </p>
+            </div>
+            <div class="col-lg-7 text-md-end">
+              <a href="/" class="btn btn-primary btn-lg me-3"
+                >Run System Check</a
+              >
+              <a href="/" class="btn btn-primary white btn-lg">
+                Book Your Exam</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nextjs-footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Next.js Conf</a></li>
+              <li><a href="#">Previews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Releases</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Vercel</h3>
+            <ul>
+              <li><a href="#">Next.js + Vercel</a></li>
+              <li><a href="#">Open Source Software</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="images/logo.svg" width="130px" alt="" />
+          </div>
+
+          <div class="footer-legal">
+            Copyright © 2025 Vercel, Inc. All rights reserved.
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
