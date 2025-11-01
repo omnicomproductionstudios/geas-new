@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEAS &#8211; Global English Aptitude Solutions (GEAS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        // Fade out loader
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          // content.style.display = "grid";
+        }, 600);
+      });
+    </script>
+  </head>
+  <body id="">
+    <div id="loader">
+      <div class="spinner"></div>
+      <!-- <p>Loading...</p> -->
+    </div>
+    <header class="site_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" width="130px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html">The Exam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"
+                  >Understanding The Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="/" class="btn btn-primary"
+                >Book Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="introduction">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="title">
+                <div class="tag" data-aos="fade-up" data-aos-duration="800">
+                  The Exam
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Certificates & Verification
+                </h2>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="1200">
+                Receive a professional digital certificate within 14 calendar
+                days. Share it instantly with a link or QR code, and allow
+                institutions to verify authenticity in seconds.
+              </p>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3"
+                >What you receive</a
+              >
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary white btn-lg"
+                >How verification works</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="glance" data-aos="fade-up" data-aos-duration="1500">
+                <h3>At glance</h3>
+                <ul>
+                  <li>Delivery: digital certificate (PDF + share link)</li>
+                  <li>Verification: link & QR code</li>
+                  <li>Reporting: CEFR A1–C2</li>
+                  <li>Validity: 2 years</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Verify a Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what_exam">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Purpose</span>
+                <h2>Why certification matters</h2>
+                <p>
+                  Your certificate turns a score into portable proof. It states
+                  your CEFR level and gives decision‑makers a secure way to
+                  verify authenticity and validity in real time.
+                </p>
+                <ul class="points">
+                  <li>
+                    <strong>Clarity</strong> — concise fields that admissions
+                    and HR teams can trust immediately.
+                  </li>
+                  <li>
+                    <strong>Security</strong> — unique Certificate ID, link, and
+                    QR provide instant verification.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="copy right"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Scope</span>
+                <h2>Where it’s used</h2>
+                <ul>
+                  <li>Admissions and placement</li>
+                  <li>Hiring and promotion</li>
+                  <li>Licensing and compliance</li>
+                  <li>Personal and global mobility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background: #f9ecf4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Certificate</span>
+              <h2>What your certificate shows</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-award inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="176:78-176:118"
+                    data-source-name="Award"
+                  >
+                    <path
+                      d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                    ></path>
+                    <circle cx="12" cy="8" r="6"></circle>
+                  </svg>
+                  CEFR level
+                </h3>
+                <p>
+                  Overall CEFR outcome (A1–C2); concise skill insight may be
+                  included where relevant.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-id-card inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="181:78-181:119"
+                    data-source-name="IdCard"
+                  >
+                    <path d="M16 10h2"></path>
+                    <path d="M16 14h2"></path>
+                    <path d="M6.17 15a3 3 0 0 1 5.66 0"></path>
+                    <circle cx="9" cy="11" r="2"></circle>
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  </svg>
+                  Identity & issue details
+                </h3>
+                <p>
+                  Candidate name, test date, issue date, and validity period (2
+                  years).
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-qr-code inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="186:78-186:119"
+                    data-source-name="QrCode"
+                  >
+                    <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                    <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                    <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                    <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                    <path d="M21 21v.01"></path>
+                    <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                    <path d="M3 12h.01"></path>
+                    <path d="M12 3h.01"></path>
+                    <path d="M12 16v.01"></path>
+                    <path d="M16 12h1"></path>
+                    <path d="M21 12v.01"></path>
+                    <path d="M12 21v-1"></path>
+                  </svg>
+                  Verification fields
+                </h3>
+                <p>
+                  Unique Certificate ID with a shareable link and QR code for
+                  instant verification.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how_works">
+        <div class="container">
+          <span class="sm-tag mb-3">On the day </span>
+          <h2>Test‑day guidance & live support</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <ul>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Check in </strong>
+                  Verify ID and confirm approved accommodations with the
+                  proctor.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Environment</strong>
+                  Complete the quick room scan and confirm any permitted tools.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>During exam </strong>
+                  Use the chat to contact the proctor for clarifications on
+                  procedures.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>After exam </strong>
+                  You will receive results within 14 calendar days.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background: #f9ecf4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Verification</span>
+              <h2>Verification options</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-link2 lucide-link-2 inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="219:78-219:118"
+                    data-source-name="Link2"
+                  >
+                    <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+                    <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+                    <line x1="8" x2="16" y1="12" y2="12"></line>
+                  </svg>
+                  Share link
+                </h3>
+                <p>
+                  Send your unique verification URL. The page displays live
+                  status and certificate fields.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-qr-code inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="224:78-224:119"
+                    data-source-name="QrCode"
+                  >
+                    <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                    <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                    <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                    <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                    <path d="M21 21v.01"></path>
+                    <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                    <path d="M3 12h.01"></path>
+                    <path d="M12 3h.01"></path>
+                    <path d="M12 16v.01"></path>
+                    <path d="M16 12h1"></path>
+                    <path d="M21 12v.01"></path>
+                    <path d="M12 21v-1"></path>
+                  </svg>
+                  QR code
+                </h3>
+                <p>
+                  The PDF includes a QR that opens verification instantly on
+                  mobile devices.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-search-check inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="229:78-229:124"
+                    data-source-name="SearchCheck"
+                  >
+                    <path d="m8 11 2 2 4-4"></path>
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                  Portal lookup
+                </h3>
+                <p>
+                  Institutions enter the Certificate ID at /verify to confirm
+                  authenticity and validity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2>Explore next</h2>
+              <p>Go deeper into policy and delivery.</p>
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Overview</span>
+                <h3>Exam Overview</h3>
+                <p class="mb-5">Purpose, scope, and who the exam is for.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Security</span>
+                <h3>Delivery & Security</h3>
+                <p class="mb-5">
+                  Identity checks, monitoring, and tamper‑resistant workflows.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Format</span>
+                <h3>Format & Timing</h3>
+                <p class="mb-5">Sections, task types, and time guidance.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_faq">
+        <div class="container">
+          <h2 class="title">Quick answers</h2>
+
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  When will I receive my certificate?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Within 14 calendar days of completing your exam.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How long is the certificate valid?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Certificates are valid for 2 years from the issue date.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What does the certificate show?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Your name, CEFR level (A1–C2), test date, unique Certificate
+                  ID, and a verification link/QR code.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Can I download a PDF?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Download a secure PDF from your dashboard and share the
+                  verification link with third parties.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  How do universities verify it?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  They use the /verify portal and enter your Certificate ID, or
+                  scan the QR code on the PDF.
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Is there a cost to verify?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Verification is free for institutions and employers.
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  What if my name is misspelled?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Open a support ticket with your ID; we can correct
+                  administrative errors after validation.
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  Can I hide my Candidate ID?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Your public certificate shows only necessary fields. The
+                  internal Candidate ID is not exposed to third parties.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  What happens if my exam is under review?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Issuance may be paused for integrity checks. You will be
+                  notified and updated once resolved.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  Can I share on LinkedIn?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Use the share link; it renders a public verification page
+                  with your CEFR level and validity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_book">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+              <h2>Share a result people trust.</h2>
+              <p>
+                Book your exam now—verified certificates are issued within 14
+                calendar days.
+              </p>
+            </div>
+            <div class="col-lg-7 text-md-end">
+              <a href="/" class="btn btn-primary btn-lg me-3">Book Your Exam</a>
+              <a href="/" class="btn btn-primary white btn-lg">
+                Verify a Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nextjs-footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Next.js Conf</a></li>
+              <li><a href="#">Previews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Releases</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Vercel</h3>
+            <ul>
+              <li><a href="#">Next.js + Vercel</a></li>
+              <li><a href="#">Open Source Software</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="images/logo.svg" width="130px" alt="" />
+          </div>
+
+          <div class="footer-legal">
+            Copyright © 2025 Vercel, Inc. All rights reserved.
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

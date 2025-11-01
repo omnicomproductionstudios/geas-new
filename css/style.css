@@ -2441,7 +2441,7 @@ border-bottom-left-radius:2rem;
 /* Exam Detail page */
 .introduction{
     padding: 14rem 0;
-    background-color: #f8edf2;
+    background-color: #feedf3;
 }
 .introduction h2{
     padding: 2rem 0;
@@ -2456,12 +2456,8 @@ border-bottom-left-radius:2rem;
     /* background: linear-gradient(93deg, #ffe1e1 -33.46%, #f7e0e8 59.02%, #fffcfd 151.5%); */
     padding: 3rem;
     border-radius: 2rem;
-    background: linear-gradient(
-    180deg,
-    #fdf3f7 0%,
-    #f6f0ff 100%
-  );
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: linear-gradient(rgba(245, 139, 176, 0.094), rgba(231, 215, 255, 0.333));
+    border: 1px solid rgb(239, 231, 246);
 }
 .introduction .glance h3{
     font-size: 2.5rem;
@@ -2480,11 +2476,11 @@ border-bottom-left-radius:2rem;
 }
 
 .what_exam{
-    background-color: #fcf8fb;
+    background: linear-gradient(#ffffffa6, #ffffffa6);
     padding: 6rem 0;
 }
 .sm-tag{
-    background-color: #f6e2eb;
+    background-color: #ffe1eb;
     display: inline-block;
     color: var(--color3);
     font-size: 1.3rem;
@@ -2582,7 +2578,7 @@ border-bottom-left-radius:2rem;
     width: 1px;
     height: 100%;
     position: absolute;
-    background-color: #dbdbdb;
+    background-color: #dbdbdb54;
     content: '';
     left: 0px;
     top: 0px;
@@ -2608,10 +2604,9 @@ border-bottom-left-radius:2rem;
     border-radius: 50px;
     background-color: var(--color2);
 }
-
 .measures{
     padding: 6rem 0;
-    background-color: #f4edf7;
+    background-color: #fbeef4;
 }
 .measures h2{
     font-size: 2.5rem;
@@ -2627,6 +2622,15 @@ border-bottom-left-radius:2rem;
 }
 .measures .box i{
     font-size: 2.5rem;
+    background-color: var(--color2);
+    color: #fff;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: inline-flex;
+    font-size: 2.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
 }
 .measures .box h3{
     margin: 1.2rem 0;
@@ -2645,25 +2649,65 @@ border-bottom-left-radius:2rem;
     color: var(--color1);
     margin-bottom: 4rem;
 }
-.explore .box{
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+
+.card1{
     padding: 2rem;
     border-radius: 2rem;
     height: 100%;
     position: relative;
+    border: rgb(239, 231, 246) solid 1px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 26, 58, 0.06) 0px 16px 40px;
+    transition: all .5s ease;
+    height: 100%;
 }
-.explore .box .sm-tag{
+.card1:hover{
+    transform: translateY(1rem);
+}
+.card1 .sm-tag{
     font-size: 1rem;
     background-color: #e1d7fe;
 }
-.explore .box h3{
-    margin: 1.5rem 0 1rem;
+.card1 .line{
+    width: 50px;
+    display: block;
+    height: 5px;
+    background-color: var(--color2);
+    border-radius: 50px;
 }
-.explore .box p{
+.card1 .line2{
+    background-color: rgb(231, 215, 255);
+}
+.card1 h3{
+    margin: 1.5rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.card1 p{
     font-size: 1.3rem;
 }
-.explore .box a{
+.card1 ul{
+    color: var(--color1);
+    font-size: 1.3rem;
+}
+.card1 ol{
+    color: var(--color1);
+    font-size: 1.3rem;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+}
+.card1 ol li{
+    margin-bottom: 1.5rem;
+}
+.card1 ol li:last-child{
+    margin-bottom: 0px;
+}
+.card1 a{
     color: var(--color2);
     text-decoration: none;
     position: absolute;
@@ -2672,7 +2716,7 @@ border-bottom-left-radius:2rem;
     display: flex;
     align-items: center;
 }
-.explore .box a i{
+.card1 a i{
     font-size: 1.8rem;
     margin-left: 0.8rem;
 }
@@ -3817,4 +3861,40 @@ border-bottom-left-radius:2rem;
 .idea .box p{
     font-size: 1.4rem;
     margin: 3rem 0;
+}
+
+.alignment{
+    background: #f8edf6;
+}
+.label .box{
+    border-color: rgb(239, 231, 246);
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 26, 58, 0.06) 0px 16px 40px;
+    border-radius: 2.4rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+.label .box .lebel-tag{
+    color: var(--color2);
+    font-size: 1.3rem;
+}
+.label .box h3{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+.label .box p{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    opacity: .8;
+}
+
+.cta_link{
+    display: inline-flex;
+    color: var(--color2);
+    align-items: center;
+    transition: all .5s ease;
+}
+.cta_link:hover{
+    color: var(--color3);
 }

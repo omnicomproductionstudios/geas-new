@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEAS &#8211; Global English Aptitude Solutions (GEAS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+        // Fade out loader
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          // content.style.display = "grid";
+        }, 600);
+      });
+    </script>
+  </head>
+  <body id="">
+    <div id="loader">
+      <div class="spinner"></div>
+      <!-- <p>Loading...</p> -->
+    </div>
+    <header class="site_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" width="130px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html">The Exam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"
+                  >Understanding The Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="/" class="btn btn-primary"
+                >Book Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="introduction">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="title">
+                <div class="tag" data-aos="fade-up" data-aos-duration="800">
+                  The Exam
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Accessibility & Support
+                </h2>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="1200">
+                We provide reasonable accommodations and responsive support so
+                every candidate can demonstrate their best performance.
+              </p>
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary btn-lg me-3"
+                >Request accommodations</a
+              >
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                href="/"
+                class="btn btn-primary white btn-lg"
+                >Contact support</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="glance" data-aos="fade-up" data-aos-duration="1500">
+                <h3>At glance</h3>
+                <ul>
+                  <li>Accommodations available</li>
+                  <li>Submit >= 10 business days before</li>
+                  <li>Secure document handling</li>
+                  <li>Live in‑session help</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Start a request</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what_exam">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-8">
+              <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Purpose</span>
+                <h2>Fair access without compromising integrity</h2>
+                <p>
+                  Accommodations adapt delivery—not standards. Scoring criteria
+                  remain identical. Our goal is to remove barriers while keeping
+                  results comparable.
+                </p>
+                <ul class="points">
+                  <li>
+                    <strong>Candidate‑first</strong> — clear steps, predictable
+                    timelines, and respectful handling.
+                  </li>
+                  <li>
+                    <strong>Consistency</strong> — solutions that preserve the
+                    validity of your result.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="copy right"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Scope</span>
+                <h2>Who can apply</h2>
+                <ul>
+                  <li>Long‑term disabilities or health conditions</li>
+                  <li>Temporary injuries affecting test performance</li>
+                  <li>Learning differences with professional documentation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Request</span>
+              <h2>How to request accommodations</h2>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line1"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clipboard-list inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="173:78-173:126"
+                    data-source-name="ClipboardList"
+                  >
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                    <path
+                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                    ></path>
+                    <path d="M12 11h4"></path>
+                    <path d="M12 16h4"></path>
+                    <path d="M8 11h.01"></path>
+                    <path d="M8 16h.01"></path>
+                  </svg>
+                  Using results
+                </h3>
+                <p>
+                  How institutions and employers verify certificates and
+                  interpret levels.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line2"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="178:78-178:121"
+                    data-source-name="FileText"
+                  >
+                    <path
+                      d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                  Upload documentation
+                </h3>
+                <p>
+                  Provide a professional letter/report describing the condition,
+                  impact, and recommendations.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="line line3"></span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-user-check inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="183:78-183:122"
+                    data-source-name="UserCheck"
+                  >
+                    <path d="m16 11 2 2 4-4"></path>
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                  </svg>
+                  Review & confirmation
+                </h3>
+                <p>
+                  Our team reviews within standard timelines and emails your
+                  approval and instructions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background: #fdf9fc">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sm-tag">Compatibility</span>
+              <h2>Assistive tools & formats</h2>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Input</span>
+                <h3>Speech & alternative input</h3>
+                <p>
+                  Use approved dictation tools or alternative keyboards when
+                  permitted.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Visual</span>
+                <h3>High‑contrast & enlarged text</h3>
+                <p>
+                  We support large‑print interface modes and high‑contrast
+                  themes when enabled.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Audio</span>
+                <h3>Audio adjustments</h3>
+                <p>
+                  Use wired headphones and adjust volume levels. Captions are
+                  available for instructions where appropriate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how_works alignment">
+        <div class="container">
+          <span class="sm-tag mb-3">On the day </span>
+          <h2>Test‑day guidance & live support</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <ul>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Check in</strong>
+                  Verify ID and confirm approved accommodations with the
+                  proctor.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>Environment</strong>
+                  Complete the quick room scan and confirm any permitted tools.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>During exam</strong>
+                  Use the chat to contact the proctor for clarifications on
+                  procedures.
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="aos-init"
+                >
+                  <strong>After exam </strong>
+                  You will receive results within 14 calendar days.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                <span class="sm-tag">Live help</span>
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-life-buoy inline h-4 w-4 mr-2"
+                    aria-hidden="true"
+                    data-source-pos="235:78-235:121"
+                    data-source-name="LifeBuoy"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                  </svg>
+                  Contact channels
+                </h3>
+                <ol>
+                  <li>
+                    <i class="bi bi-chat-right"></i>
+                    In‑session chat
+                  </li>
+                  <li><i class="bi bi-envelope"></i> support@proficia.org</li>
+                  <li><i class="bi bi-telephone"></i> +[Regional number]</li>
+                  <li>
+                    <i class="bi bi-clock"></i> Mon–Sat, 08:00–20:00 (your
+                    timezone)
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam" style="background: #fcf9fc">
+        <div class="container">
+          <div class="copy" data-aos="fade-up" data-aos-duration="1500">
+            <span class="sm-tag">Documentation</span>
+            <h2>What to include</h2>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <h3>Professional statement</h3>
+                  <p>
+                    Diagnosis/condition, functional impact on testing, and
+                    recommended accommodations.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <h3>Recency</h3>
+                  <p>
+                    Provide the most recent relevant documentation to reflect
+                    your current needs.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <h3>Contact details</h3>
+                  <p>
+                    Include practitioner credentials and contact info for
+                    verification if required.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mt-4">
+              <div class="col-md-8">
+                <h3>Timelines</h3>
+                <ul class="points">
+                  <li>
+                    Submit requests ≥ 10 business days before your preferred
+                    date.
+                  </li>
+                  <li>
+                    We aim to confirm within 5–7 business days of receiving a
+                    complete file.
+                  </li>
+                  <li>
+                    Results are issued within 14 calendar days after testing.
+                  </li>
+                  <li>
+                    <strong>Accessible</strong> — 100% online with live
+                    proctoring.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="card1" data-aos="fade-up" data-aos-duration="1500">
+                  <span class="sm-tag">Security</span>
+                  <h3><i class="bi bi-shield-check"></i> Privacy & handling</h3>
+                  <ul>
+                    <li>Encrypted upload and storage</li>
+                    <li>Limited access by authorized staff</li>
+                    <li>Data kept only as long as necessary</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what_exam alignment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2>Explore next</h2>
+              <p>Go deeper into policy and delivery.</p>
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-lg-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Policies</span>
+                <h3>Candidate policies</h3>
+                <p class="mb-5">
+                  Privacy, refunds, and test rules in plain language.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Read policies <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Security</span>
+                <h3>Delivery & Security</h3>
+                <p class="mb-5">
+                  Identity checks, environment scan, and monitoring.
+                </p>
+                <a href="/" class="mt-5 cta_link"
+                  >Learn more <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card1 h-auto"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <span class="sm-tag">Booking</span>
+                <h3>Book your exam</h3>
+                <p class="mb-5">Choose a slot and upload details securely.</p>
+                <a href="/" class="mt-5 cta_link"
+                  >Go to booking <i class="bi bi-arrow-right-short"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_faq">
+        <div class="container">
+          <h2 class="title">Quick answers</h2>
+
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Who can request accommodations?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Any candidate with a documented disability or temporary
+                  condition affecting test performance.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How far in advance should I apply?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Submit your request at least 10 business days before your
+                  preferred exam date.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What documents are required?
+
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  A professional letter or report describing the condition,
+                  impact on testing, and recommended accommodations.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Are medical records stored securely?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Files are encrypted and processed under our privacy
+                  policy. Only authorized staff can access them.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Which accommodations are available?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Examples include extended time, extra breaks, large‑print
+                  interfaces, and proctor instructions via chat.
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Is assistive technology allowed?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Approved tools may be used when they do not compromise exam
+                  integrity. Declare all tools during the request. apply.
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  Can I change my booking after approval?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. We will transfer your approved accommodations to the new
+                  slot.
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  What if my request is incomplete?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  We will contact you with the missing items and place the
+                  request on hold until resolved.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  Will accommodations affect scoring?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  No. Scoring criteria remain identical for all candidates.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  Who do I contact on test day?
+                  <span class="arrow"></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Use the in‑session chat or call the regional support number
+                  listed in your confirmation email.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_book">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <h2>Need accommodations or help?</h2>
+              <p>Start a request today or speak with our support team.</p>
+            </div>
+            <div class="col-lg-5 text-md-end">
+              <a href="/" class="btn btn-primary btn-lg me-3"
+                >Start a request</a
+              >
+              <a href="/" class="btn btn-primary white btn-lg">
+                Contact support</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nextjs-footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Next.js Conf</a></li>
+              <li><a href="#">Previews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Releases</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Vercel</h3>
+            <ul>
+              <li><a href="#">Next.js + Vercel</a></li>
+              <li><a href="#">Open Source Software</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="images/logo.svg" width="130px" alt="" />
+          </div>
+
+          <div class="footer-legal">
+            Copyright © 2025 Vercel, Inc. All rights reserved.
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".site_header");
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
