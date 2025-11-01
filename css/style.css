@@ -2535,6 +2535,19 @@ border-bottom-left-radius:2rem;
     margin-bottom: 0px;
 }
 
+
+.what_exam .equal ul{
+    color: var(--color1);
+    margin: 0px;
+    /* padding: 0px; */
+}
+.what_exam .equal ul li{
+    margin-bottom: 1.5rem;
+}
+.what_exam .equal ul li:last-child{
+    margin-bottom: 0px;
+}
+
 .candidate{
     background-color: #f6edf4;
     padding: 6rem 0;
@@ -2722,7 +2735,7 @@ border-bottom-left-radius:2rem;
 }
 
 .detail_faq{
-    background-color: #f1ebf9;
+    background-color: #fcf8fd;
     padding: 6rem 0;
 }
 .detail_faq h2.title{
@@ -2732,7 +2745,7 @@ border-bottom-left-radius:2rem;
 }
 .detail_book{
     padding: 6rem 0;
-    background-color: #faf8fd;
+    background-color: #f2eafb;
 }
 .detail_book h2{
     font-weight: 600;
